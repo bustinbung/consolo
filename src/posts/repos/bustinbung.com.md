@@ -3,12 +3,10 @@ title: bustinbung.com
 date: "2021-04-01"
 tags: [ html, css, js ]
 ---
-y personal webpage and blog, generated with [Jekyll](https://jekyllrb.com) and using the [consolo](https://github.com/Forthoney/consolo) theme.
+My personal webpage and blog, written in [Svelte](https://svelte.dev/) and [SvelteKit](https://kit.svelte.dev/), using a modified version of the [consolo](https://github.com/Forthoney/consolo) theme for Jekyll.
 
-### improvements over consolo
-- Modular date formats
-- Analytics using goatcounter
-- CSS improvements (see [_addins.scss](https://github.com/bustinbung/bustinbung.com/blob/main/_sass/_addins.scss))
-- Post filters by category
-- Archive page layout
-- Auto-generated tag collection pages
+## History
+- v1: Vanilla HTML, CSS, and JS. Used the [XP.css](https://botoxparty.github.io/XP.css/) theme.
+- v2: Used Jekyll as a static site generator. Used the [no-style-please](https://github.com/riggraz/no-style-please) theme.
+- v3: Continued to use Jekyll, this time with a modified version of the [consolo](https://github.com/Forthoney/consolo) theme.
+- v4 (current): Made the switch to SvelteKit to learn Svelte via trial by fire. Using stylesheets from the previous site.
