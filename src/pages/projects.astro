@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+import { convertDate } from '../scripts/convertDate';
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const allProjectPosts = await getCollection('projects', ({ data }) => {
+    return data.isDraft !== true;
+});
+allProjectPosts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<BaseLayout pageTitle="/projects">
+    <h2>projects</h2>
+
+    <ul>
+        {allProjectPosts.map(post => 
+            <li>
+                <span>{convertDate(post.data.date)}</span>
+                <a href={'/projects/' + post.slug}>{post.data.title}</a>
+                <ul>
+                    <li>{post.data.description}</li>
+                </ul>
+            </li>
+        )}
+    </ul>
+
+    <!-- <ul>
+        {#each posts as post}
+            <li>
+                <span>{post.metadata.date}</span>
+                {#if type == 'tag'}
+                    <a href=../../{post.path}>{post.metadata.title}</a>
+                {:else}
+                    <a href={post.path}>{post.metadata.title}</a>
+                    <span class="tags">
+                        {#each post.metadata.tags as tag, index}
+                            <a href="/tag/{tag}" class="tag-link">{tag}</a>{#if index != post.metadata.tags.length - 1}<span>, </span>{/if}
+                        {/each}
+                    </span>
+                {/if}
+            </li>
+        {/each}
+    </ul> -->
+</BaseLayout>

@@ -1,0 +1,70 @@
+---
+import { Image } from 'astro:assets';
+import headshot from '../assets/img/headshot.jpg'
+import resume from '../public/pdf/Jung_Justin_Resume-v3.pdf';
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const onlinePresence = [
+    {
+        name: 'email',
+        url: 'mailto:justin@bustinbung.com'
+    },
+    {
+        name: 'github',
+        url: 'https://github.com/bustinbung'
+    },
+    {
+        name: 'linkedin',
+        url: 'https://linkedin.com/in/bustinbung'
+    },
+    {
+        name: 'instagram',
+        url: 'https://instagram.com/bustinbung'
+    },
+    {
+        name: 'twitter/x',
+        url: 'https://twitter.com/bustinbung'
+    },
+    {
+        name: 'snapchat',
+        url: 'https://t.snapchat.com/kR0XK2AW'
+    },
+    {
+        name: 'youtube',
+        url: 'https://www.youtube.com/@bustinbung'
+    },
+    {
+        name: 'spotify',
+        url: 'https://open.spotify.com/user/31ww575syjxqf7h653q36evvbgeu?si=b48408449b544942'
+    }
+]
+---
+
+<BaseLayout pageTitle="/about">
+    <h2>about</h2>
+    <Image src={headshot} alt="Justin's headshot" height=248 />
+    <p>Justin Jung (he/they/she) is a second-year student at the University of Georgia pursuing a Bachelor of Arts in Entertainment and Media Studies with a certificate in New Media and a minor in Music.</p>
+     
+    <p>Justin is an Eagle Scout, Zell Miller Scholar, and recipient of the Patrick S. Gilmore Band Award.</p>
+     
+    <p>Post-graduation, Justin hopes to work in the film and media industry in either production or post-production to help share people's stories with a wider audience. If you'd like to see some of their work, feel free to browse their projects using the navigation bar above.</p>
+    
+    <p>In their free time, Justin enjoys playing video games, reading, listening to music, and getting bubble tea.</p>
+    
+    <p>Download Justin's resume here: <a href=`${resume}`>(Jung_Justin_Resume-v3.pdf)</a></p>
+    
+    <hr>
+    
+    <h2>online presence:</h2>
+    <ul>
+        {onlinePresence.map(item => <li><a href={item.url} target="_blank">{item.name}</a></li>)}
+    </ul>
+</BaseLayout>
+
+<style>
+    img[alt="Justin's headshot"] {
+        margin-right: 10px;
+        float: left;
+    }
+</style>

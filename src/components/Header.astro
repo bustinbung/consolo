@@ -1,0 +1,32 @@
+---
+const pages = [
+    {
+        title: 'home/',
+        url: '/'
+    },
+    {
+        title: 'about/',
+        url: '/about'
+    },
+    {
+        title: 'projects/',
+        url: '/projects'
+    },
+    {
+        title: 'repos/',
+        url: '/repos'
+    },
+    {
+        title: 'blog/',
+        url: '/blog'
+    }
+];
+---
+
+<header>
+	<div class="menu">
+		<ul class="unstyled-list">
+            {pages.map(page => <li><a href={page.url} class="navbar-link">{page.title}</a></li>)}
+		</ul>
+	</div>
+</header>
