@@ -1,5 +1,5 @@
 ---
-import BaseLayout from "./BaseLayout.astro";
+import DateDisplay from "@components/DateDisplay.astro";
 const { frontmatter } = Astro.props;
 ---
 
@@ -8,7 +8,7 @@ const { frontmatter } = Astro.props;
 	<h2>{frontmatter.title}</h2>
 	<span>
 		<i>
-			<time datetime={frontmatter.date}>{frontmatter.date}</time>
+		<DateDisplay date={frontmatter.date}/>
 		</i>
 	</span>
 	<!-- <span class="tags">

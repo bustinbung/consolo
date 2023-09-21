@@ -1,0 +1,10 @@
+---
+interface Props {
+    date: Date
+}
+
+import { convertDate } from '@scripts/convertDate';
+
+const { date } = Astro.props;
+---
+<time datetime={convertDate(date)}>{convertDate(date)}</time>
