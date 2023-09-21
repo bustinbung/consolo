@@ -1,24 +1,23 @@
 ---
-const pages = [
+const pages: {title?: string, url: string}[] = [
     {
-        title: 'home/',
+        title: '/home',
         url: '/'
     },
     {
-        title: 'about/',
         url: '/about'
     },
     {
-        title: 'projects/',
         url: '/projects'
     },
     {
-        title: 'repos/',
         url: '/repos'
     },
     {
-        title: 'blog/',
         url: '/blog'
+    },
+    {
+        url: '/tags'
     }
 ];
 ---
@@ -26,7 +25,7 @@ const pages = [
 <header>
 	<div class="menu">
 		<ul class="unstyled-list">
-            {pages.map(page => <li><a href={page.url} class="navbar-link">{page.title}</a></li>)}
+            {pages.map(page => <li><a href={page.url} class="navbar-link">{page.title ? page.title : page.url}</a></li>)}
 		</ul>
 	</div>
 </header>

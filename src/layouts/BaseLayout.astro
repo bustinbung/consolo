@@ -1,9 +1,13 @@
 ---
-import Analytics from '../components/Analytics.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+interface Props {
+    pageTitle: string
+}
 
-import '../styles/global.scss'
+import Analytics from '@components/Analytics.astro';
+import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
+
+import '@styles/global.scss'
 
 const isProd = import.meta.env.PROD;
 const { pageTitle } = Astro.props;
@@ -17,7 +21,7 @@ const { pageTitle } = Astro.props;
         <meta name="generator" content={Astro.generator} />
         <title>bustinbung{pageTitle}</title>
     
-        {isProd && <Analytics/>}
+        {isProd && <Analytics domainCode="bustinbung"/>}
     </head>
 
 	<body>
@@ -29,6 +33,9 @@ const { pageTitle } = Astro.props;
             </div>
         </main>
 
-        <Footer />
+        <Footer 
+            email="justin@bustinbung.com"
+            githubUsername="bustinbung"
+            versionString="v5.0"/>
 	</body>
 </html>
