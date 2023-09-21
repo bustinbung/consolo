@@ -1,5 +1,5 @@
-import { z, defineCollection } from 'astro:content';
-import { postSchema } from '../schemas/postSchema';
+import { defineCollection } from 'astro:content';
+import { postSchema } from '@schemas/postSchema';
 
 const projectsCollection = defineCollection({
     type: 'content',
