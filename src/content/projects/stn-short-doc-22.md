@@ -2,7 +2,7 @@
 title: "caughy (stn short doc 2022)"
 description: "A short documentary about Aiden Caughy, an Atlanta-based musician and producer, and their journey experimenting with their identity."
 date: 2022-02-23
-tags: [ stn ]
+tags: [ stn, doc ]
 ---
 Our entry to the STN 2022 Short Documentary contest. The prompt was: **Through the Years**.
 

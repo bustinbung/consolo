@@ -1,6 +1,6 @@
 ---
 title: "sample breakdown"
-description: "A collection of short sampling visualizations in the style of **TrackLib.**"
+description: "A collection of short sampling visualizations in the style of TrackLib."
 date: 2021-04-03
 tags: [ graphics ]
 ---

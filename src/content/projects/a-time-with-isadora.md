@@ -1,6 +1,5 @@
 ---
 title: "a time with isadora"
-description: "A documentary centered around the “Mother of Modern Dance,” Isadora Duncan."
 date: 2023-02-21
 tags: [ doc ]
 ---

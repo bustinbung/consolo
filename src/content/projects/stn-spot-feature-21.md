@@ -8,7 +8,7 @@ Our entry to the STN 2021 Spot Feature contest. The prompt was: **Knowledge Shar
 
 [Watch here](https://youtu.be/b2wZILswE5c)
 
-<hr class="in-content">
+<hr>
 
 ### the process
 We interviewed an employee and some customers for a Pure Barre franchise in the area. We showed how the location created a community and adapted to the challenges presented by COVID-19.

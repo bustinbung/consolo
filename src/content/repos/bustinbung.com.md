@@ -1,6 +1,5 @@
 ---
 title: "bustinbung.com"
-description: "My personal webpage and blog."
 date: 2023-08-22
 tags: [ web ]
 ---

@@ -8,7 +8,7 @@ My entry to the STN 2021 How-To contest. The prompt was: **Video Production Tips
 
 [Watch here](https://youtu.be/naHeEzfsAnM)
 
-<hr class="in-content">
+<hr>
 
 ### the process
 Because of my experience in video editing, I felt that I could make a video that would be beneficial to others. My three major tips were:
