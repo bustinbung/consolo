@@ -5,8 +5,8 @@ import BaseLayout from '@layouts/BaseLayout.astro';
 import MarkdownPostLayout from '@layouts/MarkdownPostLayout.astro';
 
 export async function getStaticPaths() {
-    const projectEntries = await getCollection('projects');
-    return projectEntries.map(entry => ({
+    const repoEntries = await getCollection('repos');
+    return repoEntries.map(entry => ({
         params: {slug: entry.slug}, props: { entry },
     }));
 }
@@ -19,3 +19,11 @@ const { Content } = await entry.render();
         <Content />
     </MarkdownPostLayout>
 </BaseLayout>
+
+<style>
+    ul > li > ul {
+        max-width: 600px;
+        padding-bottom: 10px;
+        padding-left: revert;
+    }
+</style>

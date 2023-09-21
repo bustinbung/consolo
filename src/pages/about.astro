@@ -1,9 +1,10 @@
 ---
 import { Image } from 'astro:assets';
-import headshot from '../assets/img/headshot.jpg'
-import resume from '../public/pdf/Jung_Justin_Resume-v3.pdf';
 
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+
+import headshot from '@assets/img/headshot.jpg'
+import resume from '@public/pdf/Jung_Justin_Resume-v3.pdf';
 
 const onlinePresence = [
     {
@@ -60,11 +61,22 @@ const onlinePresence = [
     <ul>
         {onlinePresence.map(item => <li><a href={item.url} target="_blank">{item.name}</a></li>)}
     </ul>
-</BaseLayout>
 
-<style>
-    img[alt="Justin's headshot"] {
-        margin-right: 10px;
-        float: left;
-    }
-</style>
+    <style>
+        img[alt="Justin's headshot"] {
+            margin-right: 10px;
+            float: left;
+        }
+    
+        hr {
+            border-top: var(--border) !important;
+        }
+    
+        hr:before {
+            content: none !important;
+        }
+        hr:after {
+            content: none !important;
+        }
+    </style>
+</BaseLayout>
