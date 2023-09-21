@@ -11,7 +11,9 @@ My entry to the STN 2021 How-To contest. The prompt was: **Video Production Tips
 <hr>
 
 ### the process
+
 Because of my experience in video editing, I felt that I could make a video that would be beneficial to others. My three major tips were:
+
 1. Use your editor wisely.
 2. Keep yourself organized.
 3. Finish with sanity.

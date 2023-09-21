@@ -9,4 +9,4 @@ The whole idea started from a *Music Review* segment I created. After doing some
 
 Since then, I've been working in small chunks on animating visuals to the audio. It's a tedious process, working one or two sentences at a time, creating visuals, and making sure that each portion flows together. I've learned a lot throughout the process and I'm excited to keep working and finish the project.
 
-You can see the state of the project on its page <a href="/projects/808-doc" target="_self">here</a>.
+You can see the state of the project on its page [here](/projects/808-doc).
