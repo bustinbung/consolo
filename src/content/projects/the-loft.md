@@ -13,75 +13,146 @@ As a student in AVFT-II, I worked on the production team for Centennial's weekly
 + food review
   + a weekly segment focusing on trying and reviewing foods from around the world.
 
-### complete production list
+### content database
 
-#### S6 E3
+<table>
+	<thead>
+		<th>Episode</th>
+		<th>Segments</th>
+		<th>YouTube</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td>S6 E3</td>
+			<td>Marching band package</td>
+			<td><a href="https://youtu.be/CBVY9kk8yh0?t=854">Link</a></td>
+		</tr>
+		<tr>
+			<td rowspan="3">S6 E4</td>
+			<td>Counseling package</td>
+			<td><a href="https://youtu.be/MTzqRzY6nyY?t=100">Link</a></td>
+		</tr>
+		<tr>
+			<td>Music Review teaser</td>
+			<td><a href="https://youtu.be/MTzqRzY6nyY?t=669">Link</a></td>
+		</tr>
+		<tr>
+			<td>Food Reviews</td>
+			<td><a href="https://youtu.be/MTzqRzY6nyY?t=872">Link</a></td>
+		</tr>
+		<tr>
+			<td>S6 E5</td>
+			<td>Food Reviews</td>
+			<td><a href="https://youtu.be/2qAAz3QB7yA?t=677">Link</a></td>
+		</tr>
+		<tr>
+			<td rowspan="2">S6 E6</td>
+			<td>Food Reviews</td>
+			<td><a href="https://youtu.be/KhyFhN4-j5g?t=499">Link</a></td>
+		</tr>
+		<tr>
+			<td>Music Review</td>
+			<td><a href="https://youtu.be/KhyFhN4-j5g?t=778">Link</a></td>
+		</tr>
+		<tr>
+			<td>S6 E7</td>
+			<td>Food Reviews</td>
+			<td><a href="https://youtu.be/j8iqSsOb2BQ?t=1018">Link</a></td>
+		</tr>
+		<tr>
+			<td rowspan="2">S6 E9</td>
+			<td>Music Review</td>
+			<td><a href="https://youtu.be/_F3wveUstLI?t=213">Link</a></td>
+		</tr>
+		<tr>
+			<td>Bake Wars</td>
+			<td><a href="https://youtu.be/_F3wveUstLI?t=654">Link</a></td>
+		</tr>
+		<tr>
+			<td rowspan="2">S6 E10</td>
+			<td>Music Review</td>
+			<td><a href="https://youtu.be/52_rhK8pEbc?t=417">Link</a></td>
+		</tr>
+		<tr>
+			<td>Food Reviews</td>
+			<td><a href="https://youtu.be/52_rhK8pEbc?t=1120">Link</a></td>
+		</tr>
+		<tr>
+			<td rowspan="2">S6 E11</td>
+			<td>Music Review</td>
+			<td><a href="https://youtu.be/HC6mFrg0hHQ?t=376">Link</a></td>
+		</tr>
+		<tr>
+			<td>Food Reviews</td>
+			<td><a href="https://youtu.be/HC6mFrg0hHQ?t=1208">Link</a></td>
+		</tr>
+		<tr>
+			<td>S6 E12</td>
+			<td>Music Review</td>
+			<td><a href="https://youtu.be/y_c4fRRLhpI?t=411">Link</a></td>
+		</tr>
+		<tr>
+			<td>S6 E13</td>
+			<td>Music Review</td>
+			<td><a href="https://youtu.be/ZElFF1Ha77M?t=533">Link</a></td>
+		</tr>
+		<tr>
+			<td rowspan="2">S6 E15</td>
+			<td>Music tech package</td>
+			<td><a href="https://youtu.be/hbGufT9CdFc?t=65">Link</a></td>
+		</tr>
+		<tr>
+			<td>Music Review</td>
+			<td><a href="https://youtu.be/hbGufT9CdFc?t=709">Link</a></td>
+		</tr>
+		<tr>
+			<td>S6 E16</td>
+			<td>STN BTS Package</td>
+			<td><a href="https://youtu.be/C9L-U523mUQ?t=271">Link</a></td>
+		</tr>
+		<tr>
+			<td>S6 E18</td>
+			<td>Music Review</td>
+			<td><a href="https://youtu.be/PDSAhKonugg?t=730">Link</a></td>
+		</tr>
+		<tr>
+			<td>S6 E19</td>
+			<td>Music Review</td>
+			<td><a href="https://youtu.be/bbaBIBS-mYU?t=341">Link</a></td>
+		</tr>
+		<tr>
+			<td>S6 E20</td>
+			<td>Music Review</td>
+			<td><a href="https://youtu.be/rlHiuBI1GP4?t=473">Link</a></td>
+		</tr>
+		<tr>
+			<td>S6 EF</td>
+			<td>Music Review</td>
+			<td><a href="https://youtu.be/njIJBNFbTYM?t=1774">Link</a></td>
+		</tr>
+	</tbody>
+</table>
 
-+ Marching band package ([link](https://youtu.be/CBVY9kk8yh0?t=854))
+<style>
+	table {
+		border-collapse: collapse;
+		width: 100%;
+	}
 
-#### S6 E4
+	tr {
+		border-bottom: 1px solid;
+	}
 
-+ Counseling package ([link](https://youtu.be/MTzqRzY6nyY?t=100))
-+ Music Review teaser ([link](https://youtu.be/MTzqRzY6nyY?t=669))
-+ Food Reviews ([link](https://youtu.be/MTzqRzY6nyY?t=872))
+	table tr td:nth-last-child(-n + 2),
+	table tr th:nth-last-child(-n + 2) {
+  		border-left: 1px solid;
+	}
 
-#### S6 E5
+	td, th {
+		padding: 4px 10px 4px 10px;
+	}
 
-+ Food Reviews ([link](https://youtu.be/2qAAz3QB7yA?t=677))
-
-#### S6 E6
-
-+ Food Reviews ([link](https://youtu.be/KhyFhN4-j5g?t=499))
-+ Music Review ([link](https://youtu.be/KhyFhN4-j5g?t=778))
-
-#### S6 E7
-
-+ Food Reviews ([link](https://youtu.be/j8iqSsOb2BQ?t=1018))
-
-#### S6 E9
-
-+ Music Review ([link](https://youtu.be/_F3wveUstLI?t=213))
-+ Bake Wars ([link](https://youtu.be/_F3wveUstLI?t=654))
-
-#### S6 E10
-
-+ Music Review ([link](https://youtu.be/52_rhK8pEbc?t=417))
-+ Food Reviews ([link](https://youtu.be/52_rhK8pEbc?t=1120))
-
-#### S6 E11
-
-+ Music Review ([link](https://youtu.be/HC6mFrg0hHQ?t=376))
-+ Food Reviews ([link](https://youtu.be/HC6mFrg0hHQ?t=1208))
-
-#### S6 E12
-
-+ Music Review ([link](https://youtu.be/y_c4fRRLhpI?t=411))
-
-#### S6 E13
-
-+ Music Review ([link](https://youtu.be/ZElFF1Ha77M?t=533))
-
-#### S6 E15
-
-+ Music tech package ([link](https://youtu.be/hbGufT9CdFc?t=65))
-+ Music Review ([link](https://youtu.be/hbGufT9CdFc?t=709))
-
-#### S6 E16
-
-+ STN BTS Package ([link](https://youtu.be/C9L-U523mUQ?t=271))
-
-#### S6 E18
-
-+ Music Review ([link](https://youtu.be/PDSAhKonugg?t=730))
-
-#### S6 E19
-
-+ Music Review ([link](https://youtu.be/bbaBIBS-mYU?t=341))
-
-#### S6 E20
-
-+ Music Review ([link](https://youtu.be/rlHiuBI1GP4?t=473))
-
-#### S6 EF
-
-+ Music Review ([link](https://youtu.be/njIJBNFbTYM?t=1774))
+	td {
+		vertical-align: top;
+	}
+</style>
