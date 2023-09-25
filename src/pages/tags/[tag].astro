@@ -33,7 +33,7 @@ const { tag } = Astro.params;
 const { posts } = Astro.props;
 ---
 
-<BaseLayout pageTitle={`/${tag}`}>
+<BaseLayout pageTitle={`/${tag}`} isPost={true}>
 	<h2>{tag}</h2>
 
 	<Debug {posts}/>

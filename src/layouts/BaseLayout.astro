@@ -1,6 +1,7 @@
 ---
 interface Props {
-    pageTitle: string
+    pageTitle: string,
+    isPost?: boolean
 }
 
 import Analytics from '@components/Analytics.astro';
@@ -10,7 +11,7 @@ import Footer from '@components/Footer.astro';
 import '@styles/global.scss'
 
 const isProd = import.meta.env.PROD;
-const { pageTitle } = Astro.props;
+const { pageTitle, isPost } = Astro.props;
 ---
 
 <html lang="en">
@@ -19,7 +20,7 @@ const { pageTitle } = Astro.props;
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="generator" content={Astro.generator} />
-        <title>bustinbung{pageTitle}</title>
+        <title>{!isPost && "bustinbung"}{pageTitle}</title>
     
         {isProd && <Analytics domainCode="bustinbung"/>}
     </head>
