@@ -212,6 +212,12 @@ input[type=submit]:hover { color: var(--background-color); background-color: var
 textarea { vertical-align: top; }
 
 // code and syntax highlighting
+code {
+    padding: 3px 5px;
+    border-radius: 4px;
+    background-color: #333333;
+}
+
 .lineno { color: var(--code-color-1); margin-right: 15px; }
 figure.highlight { margin: 5px 0; }
 pre { background-color: var(--background-color);  border: none;  padding: 0;  margin: 0;  overflow:auto;  font-size: $base-font-size;  color: var(--text-color);  line-height: 1.7 !important;  font-family: $base-font-family !important; }
