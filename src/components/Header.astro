@@ -1,0 +1,31 @@
+---
+const pages: {title?: string, url: string}[] = [
+    {
+        title: '/home',
+        url: '/'
+    },
+    {
+        url: '/about'
+    },
+    {
+        url: '/projects'
+    },
+    {
+        url: '/repos'
+    },
+    {
+        url: '/blog'
+    },
+    {
+        url: '/tags'
+    }
+];
+---
+
+<header>
+	<div class="menu">
+		<ul class="unstyled-list">
+            {pages.map(page => <li><a href={page.url} class="navbar-link">{page.title ? page.title : page.url}</a></li>)}
+		</ul>
+	</div>
+</header>

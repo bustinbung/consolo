@@ -1,0 +1,25 @@
+---
+import type { z } from 'astro:content';
+import type { postSchema } from '@schemas/postSchema';
+
+import TagList from '@components/TagList.astro';
+
+interface Props {
+	frontmatter: z.infer<typeof postSchema>
+}
+
+import DateDisplay from "@components/DateDisplay.astro";
+
+const { frontmatter } = Astro.props;
+---
+<a href="javascript:history.back()" class="back-link">../</a>
+<h2>{frontmatter.title}</h2>
+<span>
+	<i>
+		<DateDisplay date={frontmatter.date}/>
+	</i>
+</span>
+<TagList tags={frontmatter.tags}/>
+<br /><br />
+
+<slot />

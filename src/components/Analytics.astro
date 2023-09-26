@@ -1,0 +1,22 @@
+---
+interface Props {
+	domainCode: string
+}
+
+const { domainCode } = Astro.props;
+---
+
+<!-- Goatcounter Analytics -->
+<div>
+	<script
+		data-goatcounter=`https://${domainCode}.goatcounter.com/count`
+		async
+		src="//gc.zgo.at/count.js"
+	></script>
+</div>
+
+<style>
+	div {
+		display: none;
+	}
+</style>

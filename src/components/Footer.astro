@@ -1,0 +1,36 @@
+---
+interface Props {
+	email: string,
+	githubUsername: string,
+	versionString: string
+}
+
+const { email, githubUsername, versionString } = Astro.props;
+---
+
+<footer>
+	<ul class="unstyled-list box right">
+		<li>
+			<a href=`mailto:${email}` class="footer-link">email</a>
+		</li>
+
+		<li>
+			<a href=`https://github.com/${githubUsername}` target="_blank" class="footer-link"> github </a>
+		</li>
+	</ul>
+
+	<ul class="unstyled-list box left">
+		<li>
+			<i>&lt;/&gt; with &lt;3 in <a href="https://astro.build" target="_blank" class="footer-link">Astro</a></i>
+		</li>
+		<li>
+			<span>{versionString}</span>
+		</li>
+	</ul>
+</footer>
+
+<style>
+	.footer-link {
+		text-decoration: underline !important;
+	}
+</style>

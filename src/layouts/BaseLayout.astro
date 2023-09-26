@@ -1,0 +1,42 @@
+---
+interface Props {
+    pageTitle: string,
+    isPost?: boolean
+}
+
+import Analytics from '@components/Analytics.astro';
+import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
+
+import '@styles/global.scss'
+
+const isProd = import.meta.env.PROD;
+const { pageTitle, isPost } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{!isPost && "bustinbung"}{pageTitle}</title>
+    
+        {isProd && <Analytics domainCode="bustinbung"/>}
+    </head>
+
+	<body>
+        <Header />
+
+        <main class="page-content" aria-label="content">
+            <div class="wrapper">
+                <slot />
+            </div>
+        </main>
+
+        <Footer 
+            email="justin@bustinbung.com"
+            githubUsername="bustinbung"
+            versionString="v5.0"/>
+	</body>
+</html>

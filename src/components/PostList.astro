@@ -1,0 +1,36 @@
+---
+interface Props {
+    collectionName: string,
+}
+
+import { getCollection } from 'astro:content';
+
+import TagList from '@components/TagList.astro';
+import DateDisplay from '@components/DateDisplay.astro';
+
+const { collectionName } = Astro.props;
+
+const allPosts = await getCollection(collectionName, ({ data }) => {
+    return data.isDraft !== true;
+});
+allPosts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<ul>
+    {allPosts.map(post => 
+        <li>
+            <DateDisplay date={new Date(post.data.date)}/>&#32;
+            <a href={`/${collectionName}/` + post.slug}>{post.data.title}</a>
+            <TagList tags={post.data.tags}/>
+            {post.data.description != undefined && <ul><li>{post.data.description}</li></ul>}
+        </li>
+    )}
+</ul>
+
+<style>
+    ul > li > ul {
+        max-width: 600px;
+        padding-bottom: 10px;
+        padding-left: revert;
+    }
+</style>
