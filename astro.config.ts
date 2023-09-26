@@ -7,5 +7,6 @@ export default defineConfig({
   image: {
     service: sharpImageService()
   },
-  integrations: [mdx()]
+  integrations: [mdx()],
+  site: 'https://bustinbung.com',
 });
