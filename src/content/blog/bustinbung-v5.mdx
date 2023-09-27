@@ -4,6 +4,7 @@ date: 2023-09-25
 tags: [ web ]
 isDraft: true
 ---
+import { Code } from 'astro/components';
 
 While rewriting my site for v5.0, I decided to take a spin at learning [Astro](https://astro.build). While learning Svelte was definitely helpful, it did complicate things more than I wanted. A framework dedicated to static site generation was really appealing to me, so I decided to try Astro. Here are some things I learned.
 
@@ -12,3 +13,19 @@ While rewriting my site for v5.0, I decided to take a spin at learning [Astro](h
 While following the tutorial on Astro's [documentation site](https://docs.astro.build/en/getting-started/), I started by creating a folder at `src/pages/posts/`, and placing all of my site contents there. However, looking through the documentation brought up [Content Collections](https://docs.astro.build/en/guides/content-collections/). According to the docs, the main benefits of using content collections are type safety and organization. So, I migrated to content collections, moving my site content to `src/content/[collection]`. This helped clean things up so that my `src/pages/` directory wasn't filled with all of my content, but everything was still organized logically within the folder structure of the project.
 
 ### type safety
+
+Following Astro's documentation, I used [Zod](https://zod.dev/) to create and add a `postSchema.ts` file that specified the contents of the frontmatter for any post on the site.
+
+<Code code={
+`import { z } from 'astro:content';
+
+export const postSchema = z.object({
+    title: z.string(),
+    description: z.string().optional(),
+    date: z.date(),
+    tags: z.array(z.string()),
+    isDraft: z.boolean().optional(),
+})`
+} lang={"tsx"}/>
+
+
