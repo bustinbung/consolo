@@ -150,6 +150,9 @@ footer {
     }
 }
 
+img {
+    max-width: $container-max-width
+}
 
 // highlight, markup
 ::selection {
