@@ -10,7 +10,7 @@ Created vertical and horizontal content for the official Redcoat Band [TikTok](h
 
 I was the Assistant Video Editor, working with the Lead Video Editor on interview and hype videos. I also communicated with the Media Chair, Photographer, and Videographer to help the team publish high-quality content on a regular basis.
 
-### content database
+### published content database
 
 <br>
 
@@ -18,9 +18,10 @@ I was the Assistant Video Editor, working with the Lead Video Editor on intervie
 |-------------|--------|-----------|-------|
 | Guess the UT Martin Mascot | [Link][utmartin-tt] | [Link][utmartin-ig] | |
 | Ball State Hype Video | [Link][ballstate-tt] | [Link][ballstate-ig] | |
-| Recreating the *Stepbrothers* Pose | | | Not yet published |
 | Krypton 360 Video | [Link][krypton-tt] | [Link][krypton-ig] | |
 | UAB Hype Video | [Link][uab-tt] | [Link][uab-ig] | |
+| Auburn Hype Video | [Link][auburn-tt] | [Link][auburn-ig] | |
+| Noon Game Routine | [Link][noon-tt] | [Link][noon-ig] | |
 
 [utmartin-tt]: https://www.tiktok.com/@ugaredcoatband/video/7272901988507995438/
 [utmartin-ig]: https://www.instagram.com/reel/CwjE4NMRfzE/
@@ -33,6 +34,12 @@ I was the Assistant Video Editor, working with the Lead Video Editor on intervie
 
 [uab-tt]: https://www.tiktok.com/@ugaredcoatband/video/7282031978671590698/
 [uab-ig]: https://www.instagram.com/reel/CxiahceLUca/
+
+[auburn-tt]: https://www.tiktok.com/@ugaredcoatband/video/7284652311480241451/
+[auburn-ig]: https://www.instagram.com/reel/Cx0mXiorPJb/
+
+[noon-tt]: https://www.tiktok.com/@ugaredcoatband/video/7289123380463291691/
+[noon-ig]: https://www.instagram.com/reel/CyTfkgdqM6d/
 
 <style>
     table {
