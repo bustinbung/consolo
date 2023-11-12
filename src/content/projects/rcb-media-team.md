@@ -22,6 +22,10 @@ I was the Assistant Video Editor, working with the Lead Video Editor on intervie
 | UAB Hype Video | [Link][uab-tt] | [Link][uab-ig] | |
 | Auburn Hype Video | [Link][auburn-tt] | [Link][auburn-ig] | |
 | Noon Game Routine | [Link][noon-tt] | [Link][noon-ig] | |
+| Uga Questions | [Link][uga-tt] | [Link][uga-ig] | |
+| Vanderbilt Hype Video | Not Posted | [Link][vandy-ig] | |
+| Trick Tuesday 1 | [Link][trick1-tt] | [Link][trick1-ig] | |
+| Ole Miss Hype Video | Not Posted | [Link][olemiss-ig] | |
 
 [utmartin-tt]: https://www.tiktok.com/@ugaredcoatband/video/7272901988507995438/
 [utmartin-ig]: https://www.instagram.com/reel/CwjE4NMRfzE/
@@ -40,6 +44,16 @@ I was the Assistant Video Editor, working with the Lead Video Editor on intervie
 
 [noon-tt]: https://www.tiktok.com/@ugaredcoatband/video/7289123380463291691/
 [noon-ig]: https://www.instagram.com/reel/CyTfkgdqM6d/
+
+[uga-tt]: https://www.tiktok.com/@ugaredcoatband/video/7290611602162732330/
+[uga-ig]: https://www.instagram.com/reel/Cyd9bJNKOxk/
+
+[vandy-ig]: https://www.instagram.com/reel/CyYd-5BL4vu/
+
+[trick1-tt]: https://www.tiktok.com/@ugaredcoatband/video/7293685156261432619/
+[trick1-ig]: https://www.instagram.com/reel/Cyyh400LsdO/
+
+[olemiss-ig]: https://www.instagram.com/reel/CzhNHRJx5Kg/
 
 <style>
     table {
