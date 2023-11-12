@@ -24,7 +24,7 @@ I was the Assistant Video Editor, working with the Lead Video Editor on intervie
 | Noon Game Routine | [Link][noon-tt] | [Link][noon-ig] | |
 | Uga Questions | [Link][uga-tt] | [Link][uga-ig] | |
 | Vanderbilt Hype Video | Not Posted | [Link][vandy-ig] | |
-| Trick Tuesday 1 | [Link][trick1-tt] | [Link][trick1-ig] | |
+| Trick Tuesday 1 | [Link][trick1-tt] | [Link][trick1-ig] | Shot video, but not edited by me. |
 | Ole Miss Hype Video | Not Posted | [Link][olemiss-ig] | |
 
 [utmartin-tt]: https://www.tiktok.com/@ugaredcoatband/video/7272901988507995438/
