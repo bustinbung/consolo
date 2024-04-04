@@ -1,7 +1,5 @@
 import { defineConfig, sharpImageService } from 'astro/config';
 
-import mdx from "@astrojs/mdx";
-
 // https://astro.build/config
 export default defineConfig({
 	image: {
@@ -12,6 +10,6 @@ export default defineConfig({
 			theme: 'one-dark-pro'
 		},
 	},
-	integrations: [mdx()],
+	integrations: [],
 	site: 'https://bustinbung.com',
 });
