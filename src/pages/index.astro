@@ -5,16 +5,34 @@ import BaseLayout from '@layouts/BaseLayout.astro';
 
 <BaseLayout pageTitle="/">
     <Gradient />
-    <h1 class="center">hi, i'm justin.</h2><br>
-    <p class="center">student. filmmaker. developer. musician.</p>
+    <div class="hero-content">
+        <h1>hi, i'm justin.</h1>
+        <i>student. filmmaker. developer. musician.</i>
+    </div>
 </BaseLayout>
 
 <style>
-    .center {
-        text-align: center;
+    .hero-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
     }
-    
-    h2 {
-        text-decoration: none; 
+
+    h1 {
+        font-size: 64px;
+        font-family: sans-serif;
+    }
+
+    i {
+        font-size: 25px;
+        color: #fff;
+        opacity: 80%;
+    }
+
+    h1, i {
+        margin: 0px;
     }
 </style>
