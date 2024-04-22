@@ -5,7 +5,7 @@ interface Props {
 }
 
 import Analytics from '@components/Analytics.astro';
-import Navbar from '@components/Navbar.astro';
+import Header from '@components/Header.astro';
 import Footer from '@components/Footer.astro';
 
 import '@styles/global.css';
@@ -30,7 +30,7 @@ const { pageTitle, isPost } = Astro.props;
     </head>
 
 	<body>
-        <Navbar />
+        <Header />
 
         <main class="page-content" aria-label="content">
             <div class="wrapper">
@@ -38,9 +38,7 @@ const { pageTitle, isPost } = Astro.props;
             </div>
         </main>
 
-        <!-- <Footer 
-            email="justin@bustinbung.com"
-            githubUsername="bustinbung"
-            versionString="v5.0.3"/> -->
+        <Footer 
+            versionString="v6.0.0"/>
 	</body>
 </html>
