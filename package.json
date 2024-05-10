@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@types/granim": "^2.0.4",
-    "astro": "^4.5.16",
+    "astro": "^4.6.3",
     "granim": "^2.0.0",
     "normalize.css": "^8.0.1",
     "sharp": "^0.33.3",
@@ -19,6 +19,6 @@
   },
   "devDependencies": {
     "@types/three": "^0.163.0",
-    "sass": "^1.74.1"
+    "sass": "^1.75.0"
   }
 }
