@@ -4,7 +4,6 @@ import { Image } from 'astro:assets';
 import BaseLayout from '@layouts/BaseLayout.astro';
 
 import headshot from '@assets/img/headshot.jpg';
-import resume from '@public/pdf/Jung_Justin_Resume - v6.pdf';
 
 const onlinePresence = [
     {
@@ -54,9 +53,7 @@ const onlinePresence = [
             
             <p>In their free time, Justin enjoys playing video games, reading, listening to music, and getting bubble tea.</p>
             
-            <p>Download Justin's resume here: <a href=`${resume}`>(Jung_Justin_Resume - v6.pdf)</a></p>
-            
-            <h2>online presence:</h2>
+            <h2>online presence</h2>
             <ul class="online-list">
                 {onlinePresence.map(item => <li class="online-link"><a href={item.url} target="_blank"><span class={item.icon}></span></a></li>)}
             </ul>
