@@ -11,15 +11,26 @@
   },
   "dependencies": {
     "@types/granim": "^2.0.4",
-    "astro": "^4.6.3",
+    "astro": "^4.8.3",
     "autoprefixer": "^10.4.19",
     "granim": "^2.0.0",
     "normalize.css": "^8.0.1",
     "sharp": "^0.33.3",
-    "three": "^0.163.0"
+    "three": "^0.164.1"
   },
   "devDependencies": {
-    "@types/three": "^0.163.0",
-    "sass": "^1.75.0"
+    "@eslint/js": "^9.2.0",
+    "@types/three": "^0.164.0",
+    "@typescript-eslint/parser": "^7.9.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-astro": "^1.2.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "postcss-html": "^1.7.0",
+    "sass": "^1.77.1",
+    "stylelint": "^16.5.0",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-standard": "^36.0.0",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.9.0"
   }
 }
