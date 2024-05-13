@@ -68,20 +68,25 @@ const onlinePresence = [
 <style>
     img[alt="Justin's headshot"] {
         float: left;
-        height: 100%;
-        width: auto;
+        height: auto;
+        width: 100%;
+    }
+
+    .about-content p:first-child {
+        margin-top: 0px;
     }
 
     .two-col {
         display: flex;
-        flex-direction: row;
-        gap: 40px;
+        flex-direction: column;
+        gap: var(--main-padding);
         flex-grow: 1;
     }
 
     .online-list {
         display: flex;
-        flex-direction: row;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
         list-style: none;
         gap: 20px;
         padding: 0px;
@@ -90,5 +95,11 @@ const onlinePresence = [
     .online-link > a {
         color: black;
         font-size: 30px;
+    }
+
+    @media screen and (min-width: 50rem) {
+        .two-col {
+            flex-direction: row
+        }    
     }
 </style>

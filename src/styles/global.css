@@ -1,8 +1,129 @@
+:root {
+    --header-size: 7vh;
+    --main-padding: 20px;
+    --navbar-width: 66%;
+
+    --border: solid 1px black;
+
+    --bg-color: white;
+    --secondary-color: #eee;
+    --text-color: black;
+
+    --serif-font: serif;
+    --sans-serif-font: sans-serif;
+
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 50rem) {
+    :root {
+        --navbar-width: 33%;
+    }
+}
+
+@media screen and (min-width: 60rem) {
+    :root {
+        --main-padding: 40px;
+    }
+}
+
 body {
-    font-family: serif;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100vh;
+    font-family: var(--serif-font);
+}
+
+main {
+    margin: var(--main-padding);
+    padding: var(--main-padding);
+    flex: 1 1 auto;
+    height: 100%;
+    border: var(--border);
+
+    display: flex !important;
+    flex-direction: column;
+}
+
+.wrapper {
+    flex-grow: 1;
+    min-height: 100%;
+    position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: sans-serif;
+    font-family: var(--sans-serif-font);
     margin-top: 0px !important;
+}
+
+/* Header */
+header {
+    flex: 0 0 var(--header-size);
+    position: sticky;
+    top: 0px;
+
+    width: 100%;
+    border-bottom: var(--border);
+    background-color: var(--bg-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--sans-serif-font);
+
+    z-index: 2;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: var(--navbar-width);
+    min-width: 250px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: black;
+    transition: all 0.25s ease;
+    padding: 4px;
+}
+
+.navbar-link:hover {
+    background-color: black;
+    color: white;
+}
+
+.navbar-item::before {
+    content: none;
+}
+
+/* Footer */
+footer {
+    flex: 0 0 var(--header-size);
+
+    width: 100%;
+    border-top: var(--border);
+    background-color: var(--bg-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--sans-serif-font);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - (2 * var(--main-padding)));
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
 }

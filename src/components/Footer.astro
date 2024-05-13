@@ -12,29 +12,3 @@ const { versionString } = Astro.props;
 		<li>{versionString}</li>
 	</ul>
 </footer>
-
-<style>
-    footer {
-		flex: 0 0 7vh;
-
-        width: 100%;
-        border-top: solid 1px black;
-        background-color: white;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        font-family: sans-serif;
-    }
-
-	.footer-content {
-		display: flex;
-		flex-direction: row;
-		width: calc(100% - 80px);
-		justify-content: space-between;
-		align-items: center;
-		list-style: none;
-		padding: 0px;
-	}
-</style>
