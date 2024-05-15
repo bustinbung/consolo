@@ -70,7 +70,7 @@ const onlinePresence = [
     }
 
     .about-content p:first-child {
-        margin-top: 0px;
+        margin-top: 0;
     }
 
     .two-col {
@@ -86,7 +86,8 @@ const onlinePresence = [
         justify-content: space-evenly;
         list-style: none;
         gap: 20px;
-        padding: 0px;
+        padding-inline: 20px;
+        padding-block: 0px;
     }
 
     .online-link > a {
@@ -94,7 +95,7 @@ const onlinePresence = [
         font-size: 30px;
     }
 
-    @media screen and (min-width: 50rem) {
+    @media screen and (width >= 50rem) {
         .two-col {
             flex-direction: row
         }    
