@@ -1,9 +1,4 @@
-@font-face {
-    font-family: 'LiberationSans';
-    src:
-        local('LiberationSans'),
-        url('/fonts/LiberationSans-Bold.ttf') format('truetype');
-}
+@import 'fonts';
 
 :root {
     --header-size: 7vh;
@@ -16,8 +11,8 @@
     --secondary-color: #eee;
     --text-color: black;
 
-    --serif-font: serif;
-    --sans-serif-font: sans-serif;
+    --sans-serif-font: "PP Mori", sans-serif;
+    --serif-font: "PP Editorial New", serif;
 
     --font-size: 1.2rem;
 
