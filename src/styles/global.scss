@@ -1,4 +1,4 @@
-@import 'fonts';
+@use 'fonts';
 
 :root {
     --header-size: 7vh;
@@ -12,7 +12,7 @@
     --text-color: black;
 
     --sans-serif-font: "PP Mori", sans-serif;
-    --serif-font: "PP Editorial New", serif;
+    --serif-font: "PP Writer", serif;
 
     --font-size: 1.2rem;
 
@@ -47,7 +47,7 @@ main {
     height: 100%;
     border: var(--border);
 
-    display: flex !important;
+    display: flex;
     flex-direction: column;
 
     .wrapper {
@@ -59,7 +59,10 @@ main {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--sans-serif-font);
-    margin-top: 0px !important;
+}
+
+.page-title {
+    margin-top: 0;
 }
 
 /* Header */

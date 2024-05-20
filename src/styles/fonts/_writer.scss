@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'PP Writer';
+    src: local('PP Writer Black Italic'), local('PPWriter-BlackItalic'),
+        url('/fonts/writer/subset-PPWriter-BlackItalic.woff2') format('woff2'),
+        url('/fonts/writer/subset-PPWriter-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PP Writer';
+    src: local('PP Writer Black'), local('PPWriter-Black'),
+        url('/fonts/writer/subset-PPWriter-Black.woff2') format('woff2'),
+        url('/fonts/writer/subset-PPWriter-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Writer Black Text';
+    src: local('PP Writer Black Text'), local('PPWriter-BlackText'),
+        url('/fonts/writer/subset-PPWriter-BlackText.woff2') format('woff2'),
+        url('/fonts/writer/subset-PPWriter-BlackText.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Writer Book';
+    src: local('PP Writer Book'), local('PPWriter-Book'),
+        url('/fonts/writer/subset-PPWriter-Book.woff2') format('woff2'),
+        url('/fonts/writer/subset-PPWriter-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Writer';
+    src: local('PP Writer Regular'), local('PPWriter-Regular'),
+        url('/fonts/writer/subset-PPWriter-Regular.woff2') format('woff2'),
+        url('/fonts/writer/subset-PPWriter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Writer Text';
+    src: local('PP Writer Regular Text'), local('PPWriter-RegularText'),
+        url('/fonts/writer/subset-PPWriter-RegularText.woff2') format('woff2'),
+        url('/fonts/writer/subset-PPWriter-RegularText.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Writer Thin Text';
+    src: local('PP Writer Thin Text'), local('PPWriter-ThinText'),
+        url('/fonts/writer/subset-PPWriter-ThinText.woff2') format('woff2'),
+        url('/fonts/writer/subset-PPWriter-ThinText.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Writer';
+    src: local('PP Writer Regular Italic'), local('PPWriter-RegularItalic'),
+        url('/fonts/writer/subset-PPWriter-RegularItalic.woff2') format('woff2'),
+        url('/fonts/writer/subset-PPWriter-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PP Writer';
+    src: local('PP Writer Thin'), local('PPWriter-Thin'),
+        url('/fonts/writer/subset-PPWriter-Thin.woff2') format('woff2'),
+        url('/fonts/writer/subset-PPWriter-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Writer Book Text';
+    src: local('PP Writer Book Text'), local('PPWriter-BookText'),
+        url('/fonts/writer/subset-PPWriter-BookText.woff2') format('woff2'),
+        url('/fonts/writer/subset-PPWriter-BookText.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Writer Text';
+    src: local('PP Writer Bold Text'), local('PPWriter-BoldText'),
+        url('/fonts/writer/subset-PPWriter-BoldText.woff2') format('woff2'),
+        url('/fonts/writer/subset-PPWriter-BoldText.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Writer';
+    src: local('PP Writer Bold Italic'), local('PPWriter-BoldItalic'),
+        url('/fonts/writer/subset-PPWriter-BoldItalic.woff2') format('woff2'),
+        url('/fonts/writer/subset-PPWriter-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PP Writer';
+    src: local('PP Writer Bold'), local('PPWriter-Bold'),
+        url('/fonts/writer/subset-PPWriter-Bold.woff2') format('woff2'),
+        url('/fonts/writer/subset-PPWriter-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Writer Book';
+    src: local('PP Writer Book Italic'), local('PPWriter-BookItalic'),
+        url('/fonts/writer/subset-PPWriter-BookItalic.woff2') format('woff2'),
+        url('/fonts/writer/subset-PPWriter-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PP Writer';
+    src: local('PP Writer Thin Italic'), local('PPWriter-ThinItalic'),
+        url('/fonts/writer/subset-PPWriter-ThinItalic.woff2') format('woff2'),
+        url('/fonts/writer/subset-PPWriter-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PP Writer';
+    src: local('PP Writer Ultrabold'), local('PPWriter-Ultrabold'),
+        url('/fonts/writer/subset-PPWriter-Ultrabold.woff2') format('woff2'),
+        url('/fonts/writer/subset-PPWriter-Ultrabold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Writer';
+    src: local('PP Writer Ultrabold Italic'), local('PPWriter-UltraboldItalic'),
+        url('/fonts/writer/subset-PPWriter-UltraboldItalic.woff2') format('woff2'),
+        url('/fonts/writer/subset-PPWriter-UltraboldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PP Writer Ultrabold Text';
+    src: local('PP Writer Ultrabold Text'), local('PPWriter-UltraboldText'),
+        url('/fonts/writer/subset-PPWriter-UltraboldText.woff2') format('woff2'),
+        url('/fonts/writer/subset-PPWriter-UltraboldText.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
