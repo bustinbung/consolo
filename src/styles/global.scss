@@ -46,6 +46,7 @@ main {
     flex: 1 1 auto;
     height: 100%;
     border: var(--border);
+    position: relative;
 
     display: flex;
     flex-direction: column;
@@ -54,15 +55,17 @@ main {
         flex-grow: 1;
         min-height: 100%;
         position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    :first-child {
+        margin-top: 0;
     }
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--sans-serif-font);
-}
-
-.page-title {
-    margin-top: 0;
 }
 
 /* Header */

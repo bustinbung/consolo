@@ -7,10 +7,6 @@ import headshot from '@assets/img/headshot.jpg';
 
 const onlinePresence = [
     {
-        icon: 'fa-solid fa-envelope',
-        url: 'mailto:justin@bustinbung.com'
-    },
-    {
         icon: 'fa-brands fa-github',
         url: 'https://github.com/bustinbung'
     },
@@ -38,7 +34,7 @@ const onlinePresence = [
 ---
 
 <BaseLayout pageTitle="/about">
-    <h1 class="page-title">about</h1>
+    <h1>about</h1>
 
     <div class="two-col">
         <div class="headshot">
@@ -66,10 +62,9 @@ const onlinePresence = [
 </BaseLayout>
 
 <style>
-    img[alt="Justin's headshot"] {
-        float: left;
-        height: auto;
-        width: 100%;
+    :global(.wrapper) {
+        display: flex;
+        flex-direction: column;
     }
 
     .about-content p:first-child {
@@ -81,16 +76,15 @@ const onlinePresence = [
         flex-direction: column;
         gap: var(--main-padding);
         flex-grow: 1;
+        height: 100%;
     }
 
     .online-list {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
         list-style: none;
-        gap: 20px;
-        padding-inline: 20px;
-        padding-block: 0;
+        padding-inline: 0;
     }
 
     .online-link > a {
@@ -98,9 +92,9 @@ const onlinePresence = [
         font-size: 30px;
     }
 
-    @media screen and (width >= 50rem) {
+    @media screen and (width >= 40rem) {
         .two-col {
             flex-direction: row
-        }    
+        }
     }
 </style>

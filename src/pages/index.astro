@@ -5,24 +5,11 @@ import Gradient from '@components/Gradient.astro';
 
 <BaseLayout pageTitle="/">
     <Gradient />
-    <div class="hero-content">
-        <h1>hi, i'm justin.</h1>
-        <span class="subtitle-container"><i>student. filmmaker. developer. musician.</i></span>
-    </div>
+    <h1>hi, i'm justin.</h1>
+    <span class="subtitle-container"><i>student. filmmaker. developer. musician.</i></span>
 </BaseLayout>
 
 <style>
-    .hero-content {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-        position: absolute;
-    }
-
     h1 {
         font-size: 64px;
     }
@@ -34,7 +21,7 @@ import Gradient from '@components/Gradient.astro';
     }
 
     h1, i, span {
-        margin: 0px;
+        margin: 0;
         text-align: center;
     }
 
@@ -51,20 +38,25 @@ import Gradient from '@components/Gradient.astro';
         }
     }
 
-    @media screen and (min-width: 500px) {
-        .hero-content {
-            align-items: flex-start;
-        }
-
+    @media screen and (width >= 500px) {
         h1, i, span {
             text-align: left;
         }
+
+        main {
+            align-items: flex-start;
+        }
     }
 
-    /* Override styles only on this page:
-       <main> needs overflow: hidden to hide gradient
-    */
+    /* Override styles only on this page */
     :global(main) {
         overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+        @media screen and (width >= 500px) {
+            align-items: flex-start;
+        }
     }
 </style>
