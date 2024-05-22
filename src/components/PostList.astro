@@ -10,27 +10,37 @@ import DateDisplay from '@components/DateDisplay.astro';
 
 const { collectionName } = Astro.props;
 
-const allPosts = await getCollection(collectionName, ({ data }) => {
-    return data.isDraft !== true;
+const collection = await getCollection(collectionName, ({data}) => {
+    return import.meta.env.PROD ? data.hide !== true : true;
 });
-allPosts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+collection.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
 
-<ul>
-    {allPosts.map(post => 
-        <li>
-            <DateDisplay date={new Date(post.data.date)}/>&#32;
-            <a href={`/${collectionName}/` + post.slug}>{post.data.title}</a>
-            <TagList tags={post.data.tags}/>
-            {post.data.description != undefined && <ul><li>{post.data.description}</li></ul>}
-        </li>
+<div class="post-collection-wrapper">
+    {collection.map(entry => (
+            <div class="post-wrapper">
+                <h3>{entry.data.title}</h3>
+                <i><DateDisplay date={entry.data.date}/></i>
+                <p>{entry.data.description}</p>
+            </div>
+        )
     )}
-</ul>
+</div>
 
 <style>
-    ul > li > ul {
-        max-width: 600px;
-        padding-bottom: 10px;
-        padding-left: revert;
+    .post-collection-wrapper {
+        overflow-x: auto;
+        white-space: nowrap;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: var(--main-padding);
+        margin-inline: calc(-1 * var(--main-padding));
+        padding-inline: var(--main-padding);
+    }
+
+    .post-wrapper {
+        border: var(--border);
+        min-width: calc(100vw - 4 * var(--main-padding))
     }
 </style>

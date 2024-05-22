@@ -1,7 +1,7 @@
 ---
 title: "chs band banquet video"
 date: 2021-05-21
-tags: [ edit ]
+roles: [ videographer, editor ]
 ---
 The end-of-year band banquet for the Centennial High School Band program.
 

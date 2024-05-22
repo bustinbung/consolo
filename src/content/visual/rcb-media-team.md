@@ -1,7 +1,7 @@
 ---
 title: "redcoat band media team"
 date: 2023-08-30
-tags: ["social-media"]
+roles: [ editor ]
 ---
 
 Created vertical and horizontal content for the official Redcoat Band [TikTok](https://www.tiktok.com/@ugaredcoatband) and [Instagram](https://www.instagram.com/ugaredcoatband/) pages.

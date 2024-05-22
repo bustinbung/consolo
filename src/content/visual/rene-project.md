@@ -2,7 +2,7 @@
 title: "rene project"
 description: "A docuseries following Rene Contreras, a promoter working for Coachella and the Viva! Music Festival."
 date: 2023-02-28
-tags: [ doc ]
+roles: [ editor ]
 ---
 A docuseries following Rene Contreras, a promoter working for Coachella and the Viva! Music Festival.
 

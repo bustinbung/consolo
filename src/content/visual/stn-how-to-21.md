@@ -2,7 +2,7 @@
 title: "stn how-to 2021"
 description: "A short how-to video about how to improve your editing workflow."
 date: 2021-11-13
-tags: [ stn ]
+roles: [ editor, presenter ]
 ---
 My entry to the STN 2021 How-To contest. The prompt was: **Video Production Tips, Tricks, and Hacks**.
 

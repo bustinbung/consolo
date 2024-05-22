@@ -2,7 +2,7 @@
 title: "perplexus"
 description: "A short film with the prompt: Everybody wants to rule the world."
 date: 2021-12-14
-tags: [ short-film ]
+roles: [ director, editor ]
 ---
 A short film shot and edited in two weeks. The prompt was: **Everybody wants to rule the world**.
 

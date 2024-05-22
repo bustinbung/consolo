@@ -2,7 +2,7 @@
 title: "stn spot feature 2021"
 description: "A spot feature covering a Pure Barre franchise in the area."
 date: 2021-10-09
-tags: [ stn ]
+roles: [ editor, camera operator ]
 ---
 Our entry to the STN 2021 Spot Feature contest. The prompt was: **Knowledge Sharing**.
 

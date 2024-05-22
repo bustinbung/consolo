@@ -2,12 +2,12 @@
 import BaseLayout from "@layouts/BaseLayout.astro";
 import PostList from "@components/PostList.astro";
 
-const pageTitle = '/projects';
-const collectionName = pageTitle.slice(1);
+const pageTitle = 'projects';
 ---
 
 <BaseLayout {pageTitle}>
-    <h2>{pageTitle.slice(1)}</h2>
+    <h1>projects</h1>
 
-    <PostList {collectionName}/>
+    <h2>visual media</h2>
+    <PostList collectionName="visual" />
 </BaseLayout>

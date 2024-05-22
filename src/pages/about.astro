@@ -67,6 +67,16 @@ const onlinePresence = [
         flex-direction: column;
     }
 
+    .headshot {
+        width: 100%;
+        height: auto;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
     .about-content p:first-child {
         margin-top: 0;
     }
@@ -77,6 +87,7 @@ const onlinePresence = [
         gap: var(--main-padding);
         flex-grow: 1;
         height: 100%;
+        position: relative;
     }
 
     .online-list {
@@ -95,6 +106,18 @@ const onlinePresence = [
     @media screen and (width >= 40rem) {
         .two-col {
             flex-direction: row
+        }
+
+        .headshot {
+            aspect-ratio: 211 / 248;
+            height: 100%;
+            width: auto;
+            position: absolute;
+        }
+
+        img {
+            height: 100%;
+            width: auto;
         }
     }
 </style>

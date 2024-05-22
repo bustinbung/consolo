@@ -1,7 +1,7 @@
 ---
 title: "a time with isadora"
 date: 2023-02-21
-tags: [ doc ]
+roles: [ sound designer ]
 ---
 From [*A Time with Isadora*'s official website](https://www.atimewithisadora.org):
 
