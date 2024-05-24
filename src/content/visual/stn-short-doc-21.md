@@ -2,7 +2,7 @@
 title: "music is essential (stn short doc 2021)"
 description: "A short documentary on Mojo Vinyl, a local record store in Roswell."
 date: 2021-02-03
-roles: [ editor, camera operator ]
+tags: [ editor, camera operator ]
 ---
 This was our entry to the STN 2021 Short Documentary contest: *Music is Essential*. The prompt was: **Essential Work**.
 

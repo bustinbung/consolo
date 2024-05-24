@@ -17,30 +17,79 @@ const collection = await getCollection(collectionName, ({data}) => {
 collection.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
 
-<div class="post-collection-wrapper">
+<div class=`collection-wrapper ${collectionName}`>
     {collection.map(entry => (
-            <div class="post-wrapper">
+            <div class="entry-wrapper">
                 <h3>{entry.data.title}</h3>
                 <i><DateDisplay date={entry.data.date}/></i>
-                <p>{entry.data.description}</p>
+                {entry.data.description != undefined && (
+                    <p>{entry.data.description}</p>
+                )}
             </div>
         )
     )}
 </div>
 
-<style>
-    .post-collection-wrapper {
+<div class="gallery-dots">
+    {collection.map((entry, i) => (
+        <span class={i == 0 ? `dot selected ${collectionName}` : `dot ${collectionName}`} id={i.toString()}></span>
+    ))}
+</div>
+
+<script define:vars={{collectionName}}>
+    import { dotClick } from '@scripts/dots';
+
+    const dots = document.getElementsByClassName('dot');
+
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].addEventListener('click', () => dotClick(collectionName, i));
+    }
+
+    const collectionWrapper = document.getElementsByClassName('collection-wrapper')[0];
+    collectionWrapper.addEventListener('scroll', (event) => {collectionScroll(event)})
+</script>
+
+<style lang="scss">
+    .collection-wrapper {
         overflow-x: auto;
+        scrollbar-width: none;
         white-space: nowrap;
         display: flex;
         flex-flow: row nowrap;
         gap: var(--main-padding);
-        margin-inline: calc(-1 * var(--main-padding));
+        margin-inline: calc(-1 * var(--main-padding) - 1px);
         padding-inline: var(--main-padding);
+        scroll-behavior: smooth;
     }
 
-    .post-wrapper {
+    .entry-wrapper {
         border: var(--border);
-        min-width: calc(100vw - 4 * var(--main-padding))
+        min-width: calc(100vw - 4 * var(--main-padding));
+        white-space: normal;
+        padding: calc(0.5 * var(--main-padding));
+        box-sizing: border-box;
+    }
+
+    .gallery-dots {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: calc(0.5 * var(--main-padding));
+    }
+
+    .dot {
+        height: 10px;
+        width: 10px;
+        background-color: var(--disabled-color);
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        border: var(--border);
+        transition: all 0.5s ease;
+    }
+
+    .dot.selected {
+        background-color: var(--bg-color);
     }
 </style>

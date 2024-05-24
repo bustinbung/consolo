@@ -2,7 +2,7 @@
 title: "the LOFT"
 description: "An archive of my submissions to my high school's weekly broadcast."
 date: 2021-05-20
-roles: [ writer, editor, presenter]
+tags: [ writer, editor, presenter]
 ---
 As a student in AVFT-II, I worked on the production team for Centennial's weekly broadcast: *the LOFT*. You can see a list of all the segments I submitted below.
 

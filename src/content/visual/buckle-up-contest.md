@@ -1,7 +1,7 @@
 ---
 title: "buckle up georgia video contest"
 date: 2021-11-06
-roles: [ editor ]
+tags: [ editor ]
 hide: true
 ---
 My entry to the Buckle Up Georgia Video Contest. Contestants were asked to create a 30 second PSA about safe driving.

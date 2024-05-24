@@ -2,7 +2,7 @@
 title: "stn nat package 2022"
 description: "A nat package on Kilwin's, a sweets store in Alpharetta's city center."
 date: 2022-02-23
-roles: [ editor ]
+tags: [ editor ]
 ---
 Our entry to the STN 2022 Nat Package contest. The prompt was: **Taking Care of Business**.
 

@@ -5,7 +5,7 @@ const visualCollection = defineCollection({
     schema: z.object({
         title: z.string(),
         date: z.date(),
-        roles: z.array(z.string()),
+        tags: z.array(z.string()),
         description: z.string().optional(),
         hide: z.boolean().optional(),
     })
@@ -16,7 +16,7 @@ const repoCollection = defineCollection({
     schema: z.object({
         title: z.string(),
         date: z.date(),
-        languages: z.array(z.string()),
+        tags: z.array(z.string()),
         description: z.string().optional(),
         hide: z.boolean().optional(),
     })
