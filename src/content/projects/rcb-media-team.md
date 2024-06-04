@@ -26,6 +26,12 @@ I was the Assistant Video Editor, working with the Lead Video Editor on intervie
 | Vanderbilt Hype Video | Not Posted | [Link][vandy-ig] | |
 | Trick Tuesday 1 | [Link][trick1-tt] | [Link][trick1-ig] | Shot video, but not edited by me. |
 | Ole Miss Hype Video | Not Posted | [Link][olemiss-ig] | |
+| Trick Tuesday 2 | [Link][trick2-tt] | [Link][trick2-ig] | Shot video, but not edited by me. |
+| Bowl Bound Hype Video | [Link][bb-tt] | [Link][bb-ig] | |
+| "Give this to Kevin" | [Link][kevin-tt] | [Link][kevin-ig] | |
+| Orange Bowl Hype Video | Not Posted | [Link][orange-ig] | |
+
+
 
 [utmartin-tt]: https://www.tiktok.com/@ugaredcoatband/video/7272901988507995438/
 [utmartin-ig]: https://www.instagram.com/reel/CwjE4NMRfzE/
@@ -54,6 +60,17 @@ I was the Assistant Video Editor, working with the Lead Video Editor on intervie
 [trick1-ig]: https://www.instagram.com/reel/Cyyh400LsdO/
 
 [olemiss-ig]: https://www.instagram.com/reel/CzhNHRJx5Kg/
+
+[trick2-tt]: https://www.tiktok.com/@ugaredcoatband/video/7301496048944516395/
+[trick2-ig]: https://www.instagram.com/reel/CzornPJLjVp/
+
+[bb-tt]: https://www.tiktok.com/@ugaredcoatband/video/7311508904674889003/
+[bb-ig]: https://www.instagram.com/reel/C0ubyXcxLFR/
+
+[kevin-ig]: https://www.instagram.com/reel/C1ALBRwrPqI/
+[kevin-tt]: https://www.tiktok.com/@ugaredcoatband/video/7314104962617789726/
+
+[orange-ig]: https://www.instagram.com/reel/C2DL1_mLyIi/
 
 <style>
     table {
