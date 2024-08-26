@@ -17,7 +17,7 @@ const pages: {title: string, url?: string}[] = [
 ---
 
 <header>
-    <ul class="navbar">
+    <nav class="navbar">
         {pages.map(page => <li class="navbar-item"><a href={page.url ? page.url : `/${page.title}`} class="navbar-link">{page.title}</a></li>)}
-    </ul>
+    </nav>
 </header>
