@@ -1,12 +1,11 @@
 ---
 import type { z } from 'astro:content';
-import type { postSchema } from '@schemas/postSchema';
 
 import TagList from '@components/TagList.astro';
 
-interface Props {
-	frontmatter: z.infer<typeof postSchema>
-}
+// interface Props {
+// 	frontmatter: z.infer<typeof postSchema>
+// }
 
 import DateDisplay from "@components/DateDisplay.astro";
 
