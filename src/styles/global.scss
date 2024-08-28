@@ -33,6 +33,15 @@ $tablet-width: 50rem;
     }
 }
 
+/* Set border-box globally */
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 body {
     display: flex;
     flex-direction: column;
