@@ -12,27 +12,27 @@
   "dependencies": {
     "@types/granim": "^2.0.4",
     "@vercel/speed-insights": "^1.0.12",
-    "astro": "^4.14.3",
-    "autoprefixer": "^10.4.19",
+    "astro": "^4.15.7",
+    "autoprefixer": "^10.4.20",
     "granim": "^2.0.0",
     "normalize.css": "^8.0.1",
     "sharp": "^0.33.5",
-    "three": "^0.164.1"
+    "three": "^0.168.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.2.0",
-    "@types/three": "^0.164.0",
-    "@typescript-eslint/parser": "^7.9.0",
-    "eslint": "^8.57.0",
-    "eslint-plugin-astro": "^1.2.0",
-    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "@eslint/js": "^9.10.0",
+    "@types/three": "^0.168.0",
+    "@typescript-eslint/parser": "^8.6.0",
+    "eslint": "^9.10.0",
+    "eslint-plugin-astro": "^1.2.4",
+    "eslint-plugin-jsx-a11y": "^6.10.0",
     "postcss-html": "^1.7.0",
-    "sass": "^1.77.1",
-    "stylelint": "^16.5.0",
+    "sass": "^1.79.1",
+    "stylelint": "^16.9.0",
     "stylelint-config-astro": "^1.0.4",
     "stylelint-config-html": "^1.1.0",
-    "stylelint-config-standard": "^36.0.0",
-    "typescript": "^5.4.5",
-    "typescript-eslint": "^7.9.0"
+    "stylelint-config-standard": "^36.0.1",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.6.0"
   }
 }
