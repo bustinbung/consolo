@@ -60,6 +60,7 @@ main {
 
     display: flex;
     flex-direction: column;
+    overflow: clip;
 
     .wrapper {
         flex-grow: 1;
