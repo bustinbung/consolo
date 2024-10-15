@@ -67,16 +67,6 @@ const onlinePresence = [
         flex-direction: column;
     }
 
-    .headshot {
-        width: 100%;
-        height: auto;
-    }
-
-    img {
-        width: 100%;
-        height: auto;
-    }
-
     .about-content:first-child {
         margin-top: 0;
     }
@@ -90,12 +80,24 @@ const onlinePresence = [
         position: relative;
     }
 
+    .headshot {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .headshot > img {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
     .online-list {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
         list-style: none;
         padding-inline: 0;
+        margin-bottom: 0;
     }
 
     .online-link > a {
@@ -108,16 +110,7 @@ const onlinePresence = [
             flex-direction: row
         }
 
-        .headshot {
-            aspect-ratio: 211 / 248;
-            height: 100%;
-            width: auto;
-            position: absolute;
-        }
-
-        img {
-            height: 100%;
-            width: auto;
+        .headshot img {
         }
     }
 </style>
