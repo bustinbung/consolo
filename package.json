@@ -9,8 +9,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.16.16",
     "@astrojs/check": "^0.9.4",
+    "@vercel/speed-insights": "^1.1.0",
+    "astro": "^4.16.16",
+    "modern-normalize": "^3.0.1",
+    "sass": "^1.81.0",
     "typescript": "^5.7.2"
   }
 }
