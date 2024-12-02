@@ -1,14 +1,47 @@
-# bustinbung.com
+# Astro Starter Kit: Minimal
 
-![Astro](https://img.shields.io/badge/astro-v3.1.2-e53a9f?logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNzkiIHZpZXdCb3g9IjAgMCA2NCA3OSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE5Ljk5MjQgNjUuOTI4MkMxNi4xMTY1IDYyLjQzMiAxNC45ODUxIDU1LjA4NTkgMTYuNTk5OSA0OS43NjM4QzE5LjM5OTggNTMuMTE5MyAyMy4yNzkzIDU0LjE4MjIgMjcuMjk3NyA1NC43ODIyQzMzLjUwMTMgNTUuNzA4MSAzOS41OTM3IDU1LjM2MTggNDUuMzU2NSA1Mi41NjM3QzQ2LjAxNTggNTIuMjQzNCA0Ni42MjUgNTEuODE3NCA0Ny4zNDU0IDUxLjM4NkM0Ny44ODYxIDUyLjkzNDEgNDguMDI2OCA1NC40OTcgNDcuODM4IDU2LjA4NzdDNDcuMzc4NyA1OS45NjE3IDQ1LjQyNTEgNjIuOTU0MiA0Mi4zMTc3IDY1LjIyMjdDNDEuMDc1MiA2Ni4xMyAzOS43NjA0IDY2Ljk0MTEgMzguNDc3MSA2Ny43OTY3QzM0LjUzNDYgNzAuNDI2MiAzMy40Njc5IDczLjUwOTUgMzQuOTQ5NCA3Ny45OTQ2QzM0Ljk4NDYgNzguMTAzOCAzNS4wMTYxIDc4LjIxMzEgMzUuMDk1NyA3OC40Nzk3QzMzLjA4MjggNzcuNTkwOSAzMS42MTI0IDc2LjI5NjUgMzAuNDkyMSA3NC41OTQ2QzI5LjMwODggNzIuNzk4NCAyOC43NDU4IDcwLjgxMTQgMjguNzE2MiA2OC42NjE1QzI4LjcwMTQgNjcuNjE1MiAyOC43MDE0IDY2LjU1OTcgMjguNTU4OCA2NS41MjgyQzI4LjIxMDcgNjMuMDEzNSAyNy4wMTQ0IDYxLjg4NzYgMjQuNzYwOCA2MS44MjI3QzIyLjQ0NzkgNjEuNzU2MSAyMC42MTgzIDYzLjE2NzIgMjAuMTMzMSA2NS4zODkzQzIwLjA5NjEgNjUuNTU5NyAyMC4wNDI0IDY1LjcyODIgMTkuOTg4NyA2NS45MjYzTDE5Ljk5MjQgNjUuOTI4MloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0wLjUgNTEuMzkzMkMwLjUgNTEuMzkzMiAxMS4wOTc5IDQ2LjI0MzMgMjEuNzI1NCA0Ni4yNDMzTDI5LjczODIgMjEuNTA2OUMzMC4wMzgxIDIwLjMxMDYgMzAuOTE0MSAxOS40OTc3IDMxLjkwMjkgMTkuNDk3N0MzMi44OTE4IDE5LjQ5NzcgMzMuNzY3NyAyMC4zMTA2IDM0LjA2NzcgMjEuNTA2OUw0Mi4wODA0IDQ2LjI0MzNDNTQuNjY3MiA0Ni4yNDMzIDYzLjMwNTggNTEuMzkzMiA2My4zMDU4IDUxLjM5MzJDNjMuMzA1OCA1MS4zOTMyIDQ1LjMwNDQgMi40NzU4NiA0NS4yNjkyIDIuMzc3NzJDNDQuNzUyNiAwLjkzMTQ1OCA0My44ODA0IDAgNDIuNzA0NSAwSDIxLjEwMzJDMTkuOTI3MyAwIDE5LjA5MDMgMC45MzE0NTggMTguNTM4NCAyLjM3NzcyQzE4LjQ5OTUgMi40NzQwMSAwLjUgNTEuMzkzMiAwLjUgNTEuMzkzMloiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=)
-![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=bustinbung-com)
+```sh
+npm create astro@latest -- --template minimal
+```
 
-My personal website and blog, now written in [Astro](https://astro.build), built with [Vercel](https://vercel.com).
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
 
-## version history
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-- v1: Vanilla HTML, CSS, and JS,using the [XP.css](https://botoxparty.github.io/XP.css/) theme.
-- v2: Jekyll, using the [no-style-please](https://github.com/riggraz/no-style-please) theme.
-- v3: Jekyll, using a modified version of the [consolo](https://github.com/Forthoney/consolo) theme.
-- v4: SvelteKit, using the same theme.
-- v5: Astro, using the same theme.
+## 🚀 Project Structure
+
+Inside of your Astro project, you'll see the following folders and files:
+
+```text
+/
+├── public/
+├── src/
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
+
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+
+Any static assets, like images, can be placed in the `public/` directory.
+
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
