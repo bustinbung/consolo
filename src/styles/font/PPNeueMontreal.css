@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: local('PP Neue Montreal Bold Italic'), local('PPNeueMontreal-BoldItalic'),
+        url('fonts/PPNeueMontreal/PPNeueMontreal-BoldItalic.woff2') format('woff2');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: local('PP Neue Montreal Bold'), local('PPNeueMontreal-Bold'),
+        url('fonts/PPNeueMontreal/PPNeueMontreal-Bold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: local('PP Neue Montreal Light'), local('PPNeueMontreal-Light'),
+        url('fonts/PPNeueMontreal/PPNeueMontreal-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: local('PP Neue Montreal Book'), local('PPNeueMontreal-Book'),
+        url('fonts/PPNeueMontreal/PPNeueMontreal-Book.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: local('PP Neue Montreal Italic'), local('PPNeueMontreal-Italic'),
+        url('fonts/PPNeueMontreal/PPNeueMontreal-Italic.woff2') format('woff2');
+    font-weight: 450;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: local('PP Neue Montreal Medium'), local('PPNeueMontreal-Medium'),
+        url('fonts/PPNeueMontreal/PPNeueMontreal-Medium.woff2') format('woff2');
+    font-weight: 530;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: local('PP Neue Montreal Thin Italic'), local('PPNeueMontreal-ThinItalic'),
+        url('fonts/PPNeueMontreal/PPNeueMontreal-ThinItalic.woff2') format('woff2');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: local('PP Neue Montreal Thin'), local('PPNeueMontreal-Thin'),
+        url('fonts/PPNeueMontreal/PPNeueMontreal-Thin.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: local('PP Neue Montreal Regular'), local('PPNeueMontreal-Regular'),
+        url('fonts/PPNeueMontreal/PPNeueMontreal-Regular.woff2') format('woff2');
+    font-weight: 450;
+    font-style: normal;
+    font-display: swap;
+}

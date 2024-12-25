@@ -1,4 +1,8 @@
 ---
+interface Props {
+    title: string
+}
+
 import Analytics from '@components/Analytics.astro';
 import SpeedInsights from "@vercel/speed-insights/astro";
 
@@ -14,8 +18,9 @@ const isProd = import.meta.env.PROD;
     <meta charset="UTF-8">
     <meta name="generator" content={Astro.generator} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{title}</title>
+    <title>{title} | Justin Jung</title>
 
+    <script src="https://kit.fontawesome.com/578016c09a.js" crossorigin="anonymous"></script>
     {isProd && <Analytics domainCode="bustinbung"/>}
 </head>
 <body>

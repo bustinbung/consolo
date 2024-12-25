@@ -1,0 +1,39 @@
+---
+interface Props {
+    title: string
+}
+
+import Page from "@layouts/Page.astro";
+import Navbar from "@components/Navbar.astro";
+
+const { title } = Astro.props;
+---
+<Page {title}>
+    <div class="page">
+        <div class="content">
+            <main>
+                <header class="page-title">
+                    <h1>{title.toLowerCase()}</h1>
+                </header>
+                <slot />
+            </main>
+        </div>
+        <Navbar />
+    </div>
+</Page>
+
+<style lang="scss">
+    .content {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    header {
+        padding: var(--global-padding);
+        display: flex;
+        align-items: center;
+        outline: var(--outline);
+    }
+</style>

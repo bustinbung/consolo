@@ -1,0 +1,53 @@
+@use 'font/PPNeueMontreal';
+@use 'font/PPWriter';
+
+:root {
+    --global-padding: 1.6rem;
+    --outline: 1px solid black;
+    --sans-serif-font: 'PP Neue Montreal';
+    --sans-serif-weight: 700;
+    --serif-font: 'PP Writer';
+    --serif-weight: 345;
+    // TODO: Update using em
+    --header-font-size: 3rem;
+
+    --offwhite: #faf9f6;
+    --secondary-color: #606060;
+    --black: #000000;
+
+    --bg-color: var(--offwhite);
+    --fg-color: var(--black);
+}
+
+html {
+    // font-size: 18px;
+    font-size: 15px;
+}
+
+body {
+    min-height: 100vh;
+    padding: var(--global-padding);
+    display: flex;
+    background-color: var(--bg-color);
+    font-family: var(--serif-font);
+    font-weight: var(--serif-weight);
+    font-size: 1rem;
+}
+
+.page {
+    outline: var(--outline);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+h1, h2 {
+    margin-block: 0;
+}
+
+h1 {
+    font-family: var(--sans-serif-font);
+    font-weight: var(--sans-serif-weight);
+    font-size: var(--header-font-size);
+}
