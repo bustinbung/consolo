@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'PP Writer';
     src: local('PP Writer Bold Italic'), local('PPWriter-BoldItalic'),
-        url('fonts/PPWriter/PPWriter-BoldItalic.woff2') format('woff2');
+        url('/fonts/PPWriter/PPWriter-BoldItalic.woff2') format('woff2');
     font-weight: 700;
     font-style: italic;
     font-display: swap;
@@ -10,7 +10,7 @@
 @font-face {
     font-family: 'PP Writer';
     src: local('PP Writer Black Text'), local('PPWriter-BlackText'),
-        url('fonts/PPWriter/PPWriter-BlackText.woff2') format('woff2');
+        url('/fonts/PPWriter/PPWriter-BlackText.woff2') format('woff2');
     font-weight: 905;
     font-style: normal;
     font-display: swap;
@@ -19,7 +19,7 @@
 @font-face {
     font-family: 'PP Writer';
     src: local('PP Writer Black Italic'), local('PPWriter-BlackItalic'),
-        url('fonts/PPWriter/PPWriter-BlackItalic.woff2') format('woff2');
+        url('/fonts/PPWriter/PPWriter-BlackItalic.woff2') format('woff2');
     font-weight: 900;
     font-style: italic;
     font-display: swap;
@@ -28,7 +28,7 @@
 @font-face {
     font-family: 'PP Writer';
     src: local('PP Writer Bold'), local('PPWriter-Bold'),
-        url('fonts/PPWriter/PPWriter-Bold.woff2') format('woff2');
+        url('/fonts/PPWriter/PPWriter-Bold.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -37,7 +37,7 @@
 @font-face {
     font-family: 'PP Writer';
     src: local('PP Writer Black'), local('PPWriter-Black'),
-        url('fonts/PPWriter/PPWriter-Black.woff2') format('woff2');
+        url('/fonts/PPWriter/PPWriter-Black.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -46,7 +46,7 @@
 @font-face {
     font-family: 'PP Writer';
     src: local('PP Writer Bold Text'), local('PPWriter-BoldText'),
-        url('fonts/PPWriter/PPWriter-BoldText.woff2') format('woff2');
+        url('/fonts/PPWriter/PPWriter-BoldText.woff2') format('woff2');
     font-weight: 705;
     font-style: normal;
     font-display: swap;
@@ -55,7 +55,7 @@
 @font-face {
     font-family: 'PP Writer';
     src: local('PP Writer Book Text'), local('PPWriter-BookText'),
-        url('fonts/PPWriter/PPWriter-BookText.woff2') format('woff2');
+        url('/fonts/PPWriter/PPWriter-BookText.woff2') format('woff2');
     font-weight: 345;
     font-style: normal;
     font-display: swap;
@@ -64,7 +64,7 @@
 @font-face {
     font-family: 'PP Writer';
     src: local('PP Writer Thin'), local('PPWriter-Thin'),
-        url('fonts/PPWriter/PPWriter-Thin.woff2') format('woff2');
+        url('/fonts/PPWriter/PPWriter-Thin.woff2') format('woff2');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -73,7 +73,7 @@
 @font-face {
     font-family: 'PP Writer';
     src: local('PP Writer Regular'), local('PPWriter-Regular'),
-        url('fonts/PPWriter/PPWriter-Regular.woff2') format('woff2');
+        url('/fonts/PPWriter/PPWriter-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -82,7 +82,7 @@
 @font-face {
     font-family: 'PP Writer';
     src: local('PP Writer Book Italic'), local('PPWriter-BookItalic'),
-        url('fonts/PPWriter/PPWriter-BookItalic.woff2') format('woff2');
+        url('/fonts/PPWriter/PPWriter-BookItalic.woff2') format('woff2');
     font-weight: 340;
     font-style: italic;
     font-display: swap;
@@ -91,7 +91,7 @@
 @font-face {
     font-family: 'PP Writer';
     src: local('PP Writer Book'), local('PPWriter-Book'),
-        url('fonts/PPWriter/PPWriter-Book.woff2') format('woff2');
+        url('/fonts/PPWriter/PPWriter-Book.woff2') format('woff2');
     font-weight: 340;
     font-style: normal;
     font-display: swap;
@@ -100,7 +100,7 @@
 @font-face {
     font-family: 'PP Writer';
     src: local('PP Writer Regular Italic'), local('PPWriter-RegularItalic'),
-        url('fonts/PPWriter/PPWriter-RegularItalic.woff2') format('woff2');
+        url('/fonts/PPWriter/PPWriter-RegularItalic.woff2') format('woff2');
     font-weight: 400;
     font-style: italic;
     font-display: swap;
@@ -109,7 +109,7 @@
 @font-face {
     font-family: 'PP Writer';
     src: local('PP Writer Regular Text'), local('PPWriter-RegularText'),
-        url('fonts/PPWriter/PPWriter-RegularText.woff2') format('woff2');
+        url('/fonts/PPWriter/PPWriter-RegularText.woff2') format('woff2');
     font-weight: 405;
     font-style: normal;
     font-display: swap;
@@ -118,7 +118,7 @@
 @font-face {
     font-family: 'PP Writer';
     src: local('PP Writer Ultralight Text'), local('PPWriter-UltralightText'),
-        url('fonts/PPWriter/PPWriter-UltralightText.woff2') format('woff2');
+        url('/fonts/PPWriter/PPWriter-UltralightText.woff2') format('woff2');
     font-weight: 185;
     font-style: normal;
     font-display: swap;
@@ -127,7 +127,7 @@
 @font-face {
     font-family: 'PP Writer';
     src: local('PP Writer Ultrabold Italic'), local('PPWriter-UltraboldItalic'),
-        url('fonts/PPWriter/PPWriter-UltraboldItalic.woff2') format('woff2');
+        url('/fonts/PPWriter/PPWriter-UltraboldItalic.woff2') format('woff2');
     font-weight: 800;
     font-style: italic;
     font-display: swap;
@@ -136,7 +136,7 @@
 @font-face {
     font-family: 'PP Writer';
     src: local('PP Writer Thin Text'), local('PPWriter-ThinText'),
-        url('fonts/PPWriter/PPWriter-ThinText.woff2') format('woff2');
+        url('/fonts/PPWriter/PPWriter-ThinText.woff2') format('woff2');
     font-weight: 105;
     font-style: normal;
     font-display: swap;
@@ -145,7 +145,7 @@
 @font-face {
     font-family: 'PP Writer';
     src: local('PP Writer Ultrabold'), local('PPWriter-Ultrabold'),
-        url('fonts/PPWriter/PPWriter-Ultrabold.woff2') format('woff2');
+        url('/fonts/PPWriter/PPWriter-Ultrabold.woff2') format('woff2');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
@@ -154,7 +154,7 @@
 @font-face {
     font-family: 'PP Writer';
     src: local('PP Writer Thin Italic'), local('PPWriter-ThinItalic'),
-        url('fonts/PPWriter/PPWriter-ThinItalic.woff2') format('woff2');
+        url('/fonts/PPWriter/PPWriter-ThinItalic.woff2') format('woff2');
     font-weight: 100;
     font-style: italic;
     font-display: swap;
