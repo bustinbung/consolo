@@ -10,24 +10,25 @@ const { title } = Astro.props;
 ---
 <Page {title}>
     <div class="page">
-        <div class="content">
-            <main>
-                <header class="page-title">
+        <main>
+            <header class="page-title">
+                <a href=`/${title.toLowerCase()}` class="header-link">
                     <h1>{title.toLowerCase()}</h1>
-                </header>
-                <slot />
-            </main>
-        </div>
+                </a>
+            </header>
+            <slot />
+        </main>
         <Navbar />
     </div>
 </Page>
 
 <style lang="scss">
-    .content {
+    main {
         display: flex;
         height: 100%;
         flex-direction: column;
         flex-grow: 1;
+        gap: 1px;
     }
 
     header {
@@ -35,5 +36,9 @@ const { title } = Astro.props;
         display: flex;
         align-items: center;
         outline: var(--outline);
+    }
+
+    .header-link {
+        text-decoration: none;
     }
 </style>

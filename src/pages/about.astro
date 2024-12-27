@@ -2,8 +2,6 @@
 import ContentPage from "@layouts/ContentPage.astro";
 import { Image } from "astro:assets";
 
-const svgIconSize = "35";
-
 import headshotImg from '@assets/img/headshot.jpg';
 ---
 <ContentPage title="About">
@@ -11,7 +9,7 @@ import headshotImg from '@assets/img/headshot.jpg';
         <div class="headshot">
             <Image src={headshotImg} alt="Justin's headshot" loading="eager"/>
         </div>
-        <div class="about-text">
+        <div class="about-text pad">
             <p>Justin Jung is a third-year student at the University of Georgia pursuing a Bachelor of Arts in Entertainment and Media Studies with a certificate in New Media and a minor in Music.</p>
 
             <p>Justin has experience in pre-production, principal photography, and post-production, working primarily as an editor and cinematographer. He has worked in the narrative, documentary, corporate, and social media fields and is interested in pursuing new opportunities wherever they present themselves.</p>
@@ -21,7 +19,7 @@ import headshotImg from '@assets/img/headshot.jpg';
             <p>In his free time, Justin enjoys playing video games, reading, listening to music, and getting bubble tea.</p>
         </div>
         <div class="extras">
-            <div class="online">
+            <section class="online">
                 <header>
                     <p>online</p>
                 </header>
@@ -62,59 +60,46 @@ import headshotImg from '@assets/img/headshot.jpg';
                 </div>
                 <div></div>
                 <div></div>
-            </div>
-            <div class="site">
+            </section>
+            <section class="site">
                 <header>
                     <p>site</p>
                 </header>
-                <div class="site-content">
+                <div class="pad">
                     <p>Written in <a href="https://astro.build">Astro</a>.<br>
                         Deployed by <a href="https://vercel.com">Vercel</a>.<br>
                         <a href="https://github.com/bustinbung/bustinbung.com">Open-source.</a></p>
 
                     <p>v6.1.0</p>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
 </ContentPage>
 
 <style lang="scss">
-    main {
-        height: 100%;
-    }
-
     .content {
-        display: grid;
-        grid-template-row: 1fr auto 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 1px;
 
         & > div {
             outline: var(--outline);
-            padding: var(--global-padding);
         }
     }
 
     .headshot {
-        padding: 0 !important;
+        display: flex;
 
         img {
-            width: 100%;
-            height: 100%;
             outline: var(--outline);
         }
     }
 
     .about-text {
-        max-width: 25rem;
-        
         & > :first-child {
             margin-top: 0;
         }
-    }
-
-    .extras {
-        padding: 0 !important;
     }
 
     .online {
@@ -131,6 +116,12 @@ import headshotImg from '@assets/img/headshot.jpg';
         & > div {
             aspect-ratio: 1 / 1;
         }
+    }
+
+    .extras {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
     }
 
     .item {
@@ -175,15 +166,6 @@ import headshotImg from '@assets/img/headshot.jpg';
         }
     }
 
-    .site {
-        position: relative;
-        top: 1px;
-
-        & > div {
-            padding-inline: var(--global-padding);
-        }
-    }
-
     header {
         grid-column-start: span 3;
         display: flex;
@@ -200,9 +182,5 @@ import headshotImg from '@assets/img/headshot.jpg';
             font-kerning: -2%;
             margin-block: 0;
         }
-    }
-
-    a {
-        color: var(--fg-color);
     }
 </style>

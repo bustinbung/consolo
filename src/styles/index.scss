@@ -2,14 +2,12 @@
 @use 'font/PPWriter';
 
 :root {
-    --global-padding: 1.6rem;
+    --global-padding: 1.2rem;
     --outline: 1px solid black;
     --sans-serif-font: 'PP Neue Montreal';
     --sans-serif-weight: 700;
     --serif-font: 'PP Writer';
     --serif-weight: 345;
-    // TODO: Update using em
-    --header-font-size: 3rem;
 
     --offwhite: #faf9f6;
     --secondary-color: #606060;
@@ -26,6 +24,7 @@ html {
 
 body {
     min-height: 100vh;
+    max-width: 100vw;
     padding: var(--global-padding);
     display: flex;
     background-color: var(--bg-color);
@@ -40,14 +39,105 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1px;
+    max-width: 100%;
 }
 
-h1, h2 {
+h1 {
     margin-block: 0;
 }
 
 h1 {
     font-family: var(--sans-serif-font);
     font-weight: var(--sans-serif-weight);
-    font-size: var(--header-font-size);
+    font-size: 3rem;
+}
+
+h2 {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1.4rem;
+    margin-top: 1.6rem;
+    margin-bottom: 1.1rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: normal;
+    font-style: italic;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+a {
+    color: var(--fg-color);
+}
+
+blockquote {
+    margin-inline: 0;
+    margin-block: var(--global-padding);
+    padding-inline: var(--global-padding);
+    padding-block: calc(var(--global-padding) / 2);
+    background-color: #e0e0e0;
+    position: relative;
+
+    &::before {
+        content: "";
+        background-color: #a0a0a0;
+        width: calc(var(--global-padding) / 2);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    blockquote {
+        background-color: #d0d0d0;
+    }
+}
+
+ol, ul {
+    padding-left: calc(var(--global-padding) * 1.5);
+}
+
+code {
+    background-color: #e0e0e0;
+    padding-inline: 5px;
+    font-size: 0.95rem;
+}
+
+pre.astro-code {
+    outline: var(--outline);
+    padding: 5px;
+
+    code {
+        padding-inline: revert;
+        background-color: revert;
+    }
+}
+
+.pad {
+    padding: var(--global-padding);
+}
+
+.date {
+    margin-block: 0;
+    margin-top: calc(var(--global-padding) / 8);
+    color: var(--secondary-color);
+    font-style: italic;
+}
+
+b, strong {
+    // Override normalize behavior (breaks Writer)
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
