@@ -1,7 +1,5 @@
 ---
 import { getCollection, render } from 'astro:content';
-import { format } from 'date-fns';
-import { tz } from '@date-fns/tz';
 
 export async function getStaticPaths() {
     const posts = await getCollection('blog');
@@ -16,12 +14,13 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 
 import ContentPage from '@layouts/ContentPage.astro';
+import Date from '@components/Date.astro';
 ---
 <ContentPage title="Blog">
     <header>
         <h1>{post.data.title}</h1>
-        {post.data.updateDate && <p class="date">{`${format(post.data.updateDate, "yyyy–MM–dd", { in: tz("UTC")})}`}</p>}
-        <p class="date">{format(post.data.date, "yyyy–MM–dd", { in: tz("UTC")})}{post.data.updateDate && " original"}</p>
+        {post.data.updateDate && <Date date={post.data.updateDate} />}
+        <Date date={post.data.date} appendString='original' />
     </header>
     <div class="content">
         <div class="content-text pad">

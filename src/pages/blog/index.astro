@@ -1,11 +1,10 @@
 ---
 import { getCollection } from 'astro:content';
-import { format } from 'date-fns';
-import { tz } from '@date-fns/tz';
 
 const posts = await getCollection('blog');
 
 import ContentPage from '@layouts/ContentPage.astro';
+import Date from '@components/Date.astro';
 ---
 <ContentPage title="Blog">
     <div class="content">
@@ -17,8 +16,8 @@ import ContentPage from '@layouts/ContentPage.astro';
                             <h2>{post.data.title}</h2>
                         </a>
                         {post.data.updateDate ? 
-                        <p class="date">{format(post.data.updateDate, "yyyy–MM–dd", { in: tz("UTC")})} •</p> :
-                        <p class="date">{format(post.data.date, "yyyy–MM–dd", { in: tz("UTC")})}</p>}
+                        <Date date={post.data.updateDate} appendString='•' /> :
+                        <Date date={post.data.date} />}
                     </header>
                     <p class="description">{post.data.description}</p>
                 </div>

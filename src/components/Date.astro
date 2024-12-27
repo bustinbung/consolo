@@ -1,0 +1,23 @@
+---
+interface Props {
+    date: Date,
+    formatString?: string,
+    appendString?: string
+}
+
+import { format } from 'date-fns';
+import { tz } from '@date-fns/tz';
+
+const { date, formatString = "yyyy/MM/dd", appendString } = Astro.props;
+const formattedDate = format(date, formatString, { in: tz("UTC")});
+---
+<p class="date">{formattedDate}{appendString && ` ${appendString}`}</p>
+
+<style lang="scss">
+    .date {
+        margin-block: 0;
+        margin-top: calc(var(--global-padding) / 8);
+        color: var(--secondary-color);
+        font-style: italic;
+    }
+</style>
