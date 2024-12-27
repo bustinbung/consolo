@@ -1,0 +1,59 @@
+---
+import { getCollection, render } from 'astro:content';
+import { format } from 'date-fns';
+import { tz } from '@date-fns/tz';
+
+export async function getStaticPaths() {
+    const posts = await getCollection('blog');
+
+    return posts.map((post) => ({
+        params: { post: post.id },
+        props: { post }
+    }))
+};
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+import ContentPage from '@layouts/ContentPage.astro';
+---
+<ContentPage title="Blog">
+    <header>
+        <h1>{post.data.title}</h1>
+        {post.data.updateDate && <p class="date">{`${format(post.data.updateDate, "yyyy–MM–dd", { in: tz("UTC")})}`}</p>}
+        <p class="date">{format(post.data.date, "yyyy–MM–dd", { in: tz("UTC")})}{post.data.updateDate && " original"}</p>
+    </header>
+    <div class="content">
+        <div class="content-text pad">
+            <Content />
+        </div>
+    </div>
+</ContentPage>
+
+<style lang="scss">
+    header {
+        padding: var(--global-padding);
+
+        h1 {
+            font-family: var(--serif-font);
+            font-size: 1.6rem;
+            font-style: italic;
+            font-weight: normal;
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .content-text {
+        padding-top: 0;
+
+        // Need :global() because content will render without astro tags
+        & > :global(:first-child) {
+            margin-top: 0;
+        }
+    }
+</style>

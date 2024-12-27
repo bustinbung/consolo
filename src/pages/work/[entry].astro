@@ -1,0 +1,69 @@
+---
+import { getCollection, render } from 'astro:content';
+import { format } from 'date-fns';
+import { tz } from '@date-fns/tz';
+
+export async function getStaticPaths() {
+    const entries = await getCollection('work');
+
+    return entries.map((entry) => ({
+        params: { entry: entry.id },
+        props: { entry }
+    }))
+};
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+import ContentPage from '@layouts/ContentPage.astro';
+import { Image } from 'astro:assets';
+---
+<ContentPage title="Work">
+    <header>
+        <h1>{entry.data.title}</h1>
+        <p class="date">{format(entry.data.date, "yyyy–MM", { in: tz("UTC")})}</p>
+    </header>
+    <div class="content">
+        <div class="thumbnail">
+            <Image src={entry.data.thumbnail} alt={entry.data.title} />
+        </div>
+        <div class="content-text pad">
+            <Content />
+        </div>
+    </div>
+</ContentPage>
+
+<style lang="scss">
+    header {
+        padding: var(--global-padding);
+        outline: var(--outline);
+
+        h1 {
+            font-family: var(--serif-font);
+            font-size: 1.6rem;
+            font-style: italic;
+            font-weight: normal;
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .thumbnail { 
+        display: flex;
+
+        img {
+            outline: var(--outline);
+        }
+    }
+
+    .content-text {
+        // Need :global() because content will render without astro tags
+        & > :global(:first-child) {
+            margin-top: 0;
+        }
+    }
+</style>

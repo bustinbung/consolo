@@ -1,0 +1,143 @@
+---
+import { getCollection } from 'astro:content';
+const entries = await getCollection('work');
+
+import ContentPage from '@layouts/ContentPage.astro';
+import { Image } from 'astro:assets';
+---
+<ContentPage title="Work">
+    <div class="content">
+        {entries.map((entry) => (
+            <div class="entry" id={entry.id}>
+                <Image src={entry.data.thumbnail} alt={entry.data.title} />
+                <dialog>
+                    <div class="dialog-content">
+                        <header>
+                            <h2>{entry.data.title}</h2>
+                        </header>
+                        <p>{entry.data.roles.join(" | ")}</p>
+                        <div class="entry-actions">
+                            {entry.body != undefined && 
+                                <a href={`/work/${entry.id}`} aria-label="More info">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                                </a>
+                            }
+                            <a href={entry.data.outboundLink} aria-label="View">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="0" y1="24" x2="24" y2="24"></line><line x1="24" y1="0" x2="24" y2="24"></line><line x1="24" y1="24" x2="0" y2="0" stroke-width="1"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+                </dialog>
+            </div>
+        ))}
+    </div>
+</ContentPage>
+
+<script>
+    document.body.addEventListener('click', toggleDialog);
+
+    let currentOpenDialog: HTMLDialogElement | null = null;
+    function toggleDialog(event: MouseEvent) {
+        console.log(event)
+        if (currentOpenDialog != null) {
+            const currentOpenDialogRect = currentOpenDialog?.getBoundingClientRect();
+            if (
+                event.clientX <= currentOpenDialogRect.left ||
+                event.clientX >= currentOpenDialogRect.right ||
+                event.clientY <= currentOpenDialogRect.top ||
+                event.clientY >= currentOpenDialogRect.bottom
+            ) {
+                currentOpenDialog.close()
+            }
+        }
+
+        if ((event.target as HTMLElement).nodeName != "IMG") {
+            return;
+        }
+
+        const targetEntry = (event.target as HTMLElement).parentElement!;
+        const targetDialog = targetEntry.children[1] as HTMLDialogElement;
+
+        targetDialog.show();
+        currentOpenDialog = targetDialog;
+    }
+</script>
+
+<style lang="scss">
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        position: relative;
+    }
+
+    .entry {
+        display: flex;
+    }
+
+    img {
+        outline: var(--outline);
+    }
+
+    dialog {
+        margin: 0;
+        padding: 0;
+        border: none;
+        width: 100%;
+        opacity: 0;
+        transition:
+            opacity 0.5s ease,
+            display 0.5s ease allow-discrete;
+    }
+
+    dialog[open] {
+        opacity: 1;
+    }
+
+    @starting-style {
+        dialog[open] {
+            opacity: 0;
+        }
+    }
+
+    .dialog-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: var(--global-padding);
+        outline: var(--outline);
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        background-color: #323232e6;
+        color: var(--bg-color);
+
+        svg {
+            color: var(--bg-color);
+        }
+
+        .entry-actions {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+        }
+
+        & * {
+            margin-block: 0;
+        }
+
+        & > p {
+            margin-bottom: var(--global-padding);
+        }
+        
+        header {
+            font-weight: 400;
+            font-style: italic;
+            font-size: 1.6rem;
+
+            margin-bottom: calc(var(--global-padding) / 4);
+        }
+    }
+</style>

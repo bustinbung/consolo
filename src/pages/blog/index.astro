@@ -1,0 +1,63 @@
+---
+import { getCollection } from 'astro:content';
+import { format } from 'date-fns';
+import { tz } from '@date-fns/tz';
+
+const posts = await getCollection('blog');
+
+import ContentPage from '@layouts/ContentPage.astro';
+---
+<ContentPage title="Blog">
+    <div class="content">
+        {posts.map((post) => (
+            <div class="post" id={post.id}>
+                <div class="post-details">
+                    <header>
+                        <a href={`/blog/${post.id}`}>
+                            <h2>{post.data.title}</h2>
+                        </a>
+                        {post.data.updateDate ? 
+                        <p class="date">{format(post.data.updateDate, "yyyy–MM–dd", { in: tz("UTC")})} •</p> :
+                        <p class="date">{format(post.data.date, "yyyy–MM–dd", { in: tz("UTC")})}</p>}
+                    </header>
+                    <p class="description">{post.data.description}</p>
+                </div>
+                <div class="arrow">
+                    <a href={`/blog/${post.id}`} aria-label="Read more">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="0" y1="24" x2="24" y2="24"></line><line x1="24" y1="0" x2="24" y2="24"></line><line x1="24" y1="24" x2="0" y2="0" stroke-width="1"></line></svg>
+                    </a>
+                </div>
+            </div>
+        ))}
+    </div>
+</ContentPage>
+
+<style lang="scss">
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .post {
+        display: flex;
+        flex-direction: column;
+        outline: var(--outline);
+        padding: var(--global-padding);
+    }
+
+    .description {
+        margin-top: var(--global-padding);
+    }
+    
+    .arrow {
+        margin-top: var(--global-padding);
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    h2 {
+        margin-block: 0;
+        font-size: 1.6rem;
+    }
+</style>
