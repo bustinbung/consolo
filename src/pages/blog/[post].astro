@@ -25,6 +25,7 @@ import Date from '@components/Date.astro';
     <div class="content">
         <div class="content-text pad">
             <Content />
+            <a href="#top" class="back-to-top">back to top</a>
         </div>
     </div>
 </ContentPage>
@@ -54,5 +55,13 @@ import Date from '@components/Date.astro';
         & > :global(:first-child) {
             margin-top: 0;
         }
+
+        & > :global(:nth-last-child(2))::after {
+            content: " ■";
+        }
+    }
+
+    .back-to-top {
+        font-style: italic;
     }
 </style>
