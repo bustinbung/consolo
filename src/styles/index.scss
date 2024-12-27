@@ -1,5 +1,6 @@
 @use 'font/PPNeueMontreal';
 @use 'font/PPWriter';
+@use 'font/PPNeueMontrealMono.css';
 
 :root {
     --global-padding: 1.2rem;
@@ -8,6 +9,8 @@
     --sans-serif-weight: 700;
     --serif-font: 'PP Writer';
     --serif-weight: 345;
+    --mono-font: 'PP Neue Montreal Mono';
+    --mono-weight: 450;
 
     --offwhite: #faf9f6;
     --secondary-color: #606060;
@@ -109,11 +112,15 @@ code {
     background-color: #e0e0e0;
     padding-inline: 5px;
     font-size: 0.95rem;
+    font-family: var(--mono-font);
+    font-weight: var(--mono-weight);
 }
 
 pre.astro-code {
     outline: var(--outline);
     padding: 5px;
+    font-family: var(--mono-font);
+    font-weight: var(--mono-weight);
 
     code {
         padding-inline: revert;
