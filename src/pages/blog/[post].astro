@@ -20,7 +20,7 @@ import Date from '@components/Date.astro';
     <header>
         <h1>{post.data.title}</h1>
         {post.data.updateDate && <Date date={post.data.updateDate} />}
-        <Date date={post.data.date} appendString='original' />
+        <Date date={post.data.date} appendString={post.data.updateDate && 'original'} />
     </header>
     <div class="content">
         <div class="content-text pad">
