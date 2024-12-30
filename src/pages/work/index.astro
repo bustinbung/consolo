@@ -60,8 +60,7 @@ import { Image } from 'astro:assets';
             return;
         }
 
-        const targetEntry = (event.target as HTMLElement).parentElement!;
-        const targetDialog = targetEntry.children[1] as HTMLDialogElement;
+        const targetDialog = (event.target as HTMLElement).nextElementSibling as HTMLDialogElement;
 
         targetDialog.show();
         currentOpenDialog = targetDialog;
