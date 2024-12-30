@@ -23,7 +23,7 @@ import Date from '@components/Date.astro';
         <Date date={post.data.date} appendString={post.data.updateDate && 'original'} />
     </header>
     <div class="content">
-        <div class="content-text pad">
+        <div class="content-text pad child-margin-fix">
             <Content />
             <a href="#top" class="back-to-top">back to top</a>
         </div>
@@ -32,7 +32,6 @@ import Date from '@components/Date.astro';
 
 <style lang="scss">
     header {
-
         h1 {
             font-family: var(--serif-font);
             font-size: 1.6rem;
@@ -42,14 +41,8 @@ import Date from '@components/Date.astro';
     }
 
     .content-text {
-        padding-top: 0;
         outline: var(--outline);
         width: 100%;
-
-        // Need :global() because content will render without astro tags
-        & > :global(:first-child) {
-            margin-top: var(--global-padding);
-        }
 
         & > :global(:nth-last-child(2))::after {
             content: " ■";

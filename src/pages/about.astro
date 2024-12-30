@@ -7,7 +7,7 @@ import headshotImg from '@assets/img/headshot.jpg';
 <ContentPage title="About">
     <div class="content">
         <Image src={headshotImg} alt="Justin's headshot" loading="eager"/>
-        <div class="about-text pad">
+        <div class="about-text pad child-margin-fix">
             <p>Justin Jung is a third-year student at the University of Georgia pursuing a Bachelor of Arts in Entertainment and Media Studies with a certificate in New Media and a minor in Music.</p>
 
             <p>Justin has experience in pre-production, principal photography, and post-production, working primarily as an editor and cinematographer. He has worked in the narrative, documentary, corporate, and social media fields and is interested in pursuing new opportunities wherever they present themselves.</p>
@@ -63,7 +63,7 @@ import headshotImg from '@assets/img/headshot.jpg';
                 <header>
                     <p>site</p>
                 </header>
-                <div class="pad">
+                <div class="pad child-margin-fix">
                     <p>Written in <a href="https://astro.build">Astro</a>.<br>
                         Deployed by <a href="https://vercel.com">Vercel</a>.<br>
                         <a href="https://github.com/bustinbung/bustinbung.com">Open-source.</a></p>
@@ -86,12 +86,6 @@ import headshotImg from '@assets/img/headshot.jpg';
 
     img {
         outline: var(--outline);
-    }
-
-    .about-text {
-        & > :first-child {
-            margin-top: 0;
-        }
     }
 
     .online {

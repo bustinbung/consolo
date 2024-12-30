@@ -132,6 +132,16 @@ pre.astro-code {
     padding: var(--global-padding);
 }
 
+.child-margin-fix {
+    & > :first-child {
+        margin-top: 0;
+    }
+
+    & > :last-child {
+        margin-bottom: 0;
+    }
+}
+
 b, strong {
     // Override normalize behavior (breaks Writer)
     font-weight: bold;
