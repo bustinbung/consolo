@@ -1,7 +1,12 @@
 ---
 import { getCollection } from 'astro:content';
 
-const posts = await getCollection('blog');
+const posts = await getCollection('blog', ({data}) => {
+    return data.isDraft != true;
+});
+posts.sort((a, b) => {
+    return b.data.date.getTime() - a.data.date.getTime();
+})
 
 import ContentPage from '@layouts/ContentPage.astro';
 import Date from '@components/Date.astro';
