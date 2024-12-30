@@ -72,6 +72,7 @@ import { Image } from 'astro:assets';
 
     .entry {
         display: flex;
+        position: relative;
     }
 
     img {
@@ -87,6 +88,7 @@ import { Image } from 'astro:assets';
         transition:
             opacity 0.5s ease,
             display 0.5s ease allow-discrete;
+        position: absolute;
     }
 
     dialog[open] {
@@ -137,6 +139,13 @@ import { Image } from 'astro:assets';
             font-size: 1.6rem;
 
             margin-bottom: calc(var(--global-padding) / 4);
+        }
+    }
+
+    @media (min-width: 768px) {
+        .content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 </style>

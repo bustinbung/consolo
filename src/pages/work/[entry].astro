@@ -48,6 +48,7 @@ import { Image } from 'astro:assets';
     .content {
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 1px;
     }
 
@@ -60,9 +61,17 @@ import { Image } from 'astro:assets';
     }
 
     .content-text {
+        outline: var(--outline);
+
         // Need :global() because content will render without astro tags
         & > :global(:first-child) {
             margin-top: 0;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .content-text {
+            max-width: 25rem;
         }
     }
 </style>

@@ -6,9 +6,7 @@ import headshotImg from '@assets/img/headshot.jpg';
 ---
 <ContentPage title="About">
     <div class="content">
-        <div class="headshot">
-            <Image src={headshotImg} alt="Justin's headshot" loading="eager"/>
-        </div>
+        <Image src={headshotImg} alt="Justin's headshot" loading="eager"/>
         <div class="about-text pad">
             <p>Justin Jung is a third-year student at the University of Georgia pursuing a Bachelor of Arts in Entertainment and Media Studies with a certificate in New Media and a minor in Music.</p>
 
@@ -88,12 +86,8 @@ import headshotImg from '@assets/img/headshot.jpg';
         }
     }
 
-    .headshot {
-        display: flex;
-
-        img {
-            outline: var(--outline);
-        }
+    img {
+        outline: var(--outline);
     }
 
     .about-text {
@@ -181,6 +175,22 @@ import headshotImg from '@assets/img/headshot.jpg';
             font-size: 2rem;
             font-kerning: -2%;
             margin-block: 0;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(2, auto);
+        }
+
+        .extras {
+            grid-column-start: span 2;
+        }
+
+        .online {
+            grid-template-columns: repeat(6, 1fr);
         }
     }
 </style>
