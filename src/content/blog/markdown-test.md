@@ -62,7 +62,6 @@ document.body.addEventListener('click', toggleDialog);
 
 let currentOpenDialog: HTMLDialogElement | null = null;
 function toggleDialog(event: MouseEvent) {
-    console.log(event)
     if (currentOpenDialog != null) {
         const currentOpenDialogRect = currentOpenDialog?.getBoundingClientRect();
         if (
