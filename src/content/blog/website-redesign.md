@@ -2,6 +2,7 @@
 title: "v6 Redesign"
 description: "How I designed and developed a brand new version of my website."
 date: 2024-12-14
+isDraft: true
 ---
 - Inspired by Swiss style design
     - Anytype & Teenage Engineering
