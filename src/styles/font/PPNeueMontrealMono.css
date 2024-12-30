@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'PP Neue Montreal Mono';
     src: local('PP Neue Montreal Mono Thin'), local('PPNeueMontrealMono-Thin'),
-        url('fonts/PPNeueMontrealMono/PPNeueMontrealMono-Thin.woff2') format('woff2');
+        url('/fonts/PPNeueMontrealMono/PPNeueMontrealMono-Thin.woff2') format('woff2');
     font-weight: 200;
     font-style: normal;
     font-display: swap;
@@ -10,7 +10,7 @@
 @font-face {
     font-family: 'PP Neue Montreal Mono';
     src: local('PP Neue Montreal Mono Regular Italic'), local('PPNeueMontrealMono-RegularItalic'),
-        url('fonts/PPNeueMontrealMono/PPNeueMontrealMono-RegularItalic.woff2') format('woff2');
+        url('/fonts/PPNeueMontrealMono/PPNeueMontrealMono-RegularItalic.woff2') format('woff2');
     font-weight: 450;
     font-style: italic;
     font-display: swap;
@@ -19,7 +19,7 @@
 @font-face {
     font-family: 'PP Neue Montreal Mono';
     src: local('PP Neue Montreal Mono Thin Italic'), local('PPNeueMontrealMono-ThinItalic'),
-        url('fonts/PPNeueMontrealMono/PPNeueMontrealMono-ThinItalic.woff2') format('woff2');
+        url('/fonts/PPNeueMontrealMono/PPNeueMontrealMono-ThinItalic.woff2') format('woff2');
     font-weight: 200;
     font-style: italic;
     font-display: swap;
@@ -28,7 +28,7 @@
 @font-face {
     font-family: 'PP Neue Montreal Mono';
     src: local('PP Neue Montreal Mono Medium'), local('PPNeueMontrealMono-Medium'),
-        url('fonts/PPNeueMontrealMono/PPNeueMontrealMono-Medium.woff2') format('woff2');
+        url('/fonts/PPNeueMontrealMono/PPNeueMontrealMono-Medium.woff2') format('woff2');
     font-weight: 530;
     font-style: normal;
     font-display: swap;
@@ -37,7 +37,7 @@
 @font-face {
     font-family: 'PP Neue Montreal Mono Book';
     src: local('PP Neue Montreal Mono Book'), local('PPNeueMontrealMono-Book'),
-        url('fonts/PPNeueMontrealMono/PPNeueMontrealMono-Book.woff2') format('woff2');
+        url('/fonts/PPNeueMontrealMono/PPNeueMontrealMono-Book.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -46,7 +46,7 @@
 @font-face {
     font-family: 'PP Neue Montreal Mono';
     src: local('PP Neue Montreal Mono Light'), local('PPNeueMontrealMono-Light'),
-        url('fonts/PPNeueMontrealMono/PPNeueMontrealMono-Light.woff2') format('woff2');
+        url('/fonts/PPNeueMontrealMono/PPNeueMontrealMono-Light.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -55,7 +55,7 @@
 @font-face {
     font-family: 'PP Neue Montreal Mono';
     src: local('PP Neue Montreal Mono Regular'), local('PPNeueMontrealMono-Regular'),
-        url('fonts/PPNeueMontrealMono/PPNeueMontrealMono-Regular.woff2') format('woff2');
+        url('/fonts/PPNeueMontrealMono/PPNeueMontrealMono-Regular.woff2') format('woff2');
     font-weight: 450;
     font-style: normal;
     font-display: swap;
@@ -64,7 +64,7 @@
 @font-face {
     font-family: 'PP Neue Montreal Mono';
     src: local('PP Neue Montreal Mono Bold Italic'), local('PPNeueMontrealMono-BoldItalic'),
-        url('fonts/PPNeueMontrealMono/PPNeueMontrealMono-BoldItalic.woff2') format('woff2');
+        url('/fonts/PPNeueMontrealMono/PPNeueMontrealMono-BoldItalic.woff2') format('woff2');
     font-weight: 800;
     font-style: italic;
     font-display: swap;
@@ -73,7 +73,7 @@
 @font-face {
     font-family: 'PP Neue Montreal Mono';
     src: local('PP Neue Montreal Mono Bold'), local('PPNeueMontrealMono-Bold'),
-        url('fonts/PPNeueMontrealMono/PPNeueMontrealMono-Bold.woff2') format('woff2');
+        url('/fonts/PPNeueMontrealMono/PPNeueMontrealMono-Bold.woff2') format('woff2');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
