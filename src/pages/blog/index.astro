@@ -38,9 +38,7 @@ import Date from '@components/Date.astro';
 
 <style lang="scss">
     .content {
-        display: flex;
-        flex-direction: column;
-        gap: 1px;
+        align-items: normal;
     }
 
     .post {
@@ -58,6 +56,11 @@ import Date from '@components/Date.astro';
         margin-top: var(--global-padding);
         display: flex;
         flex-direction: row-reverse;
+    }
+
+    header {
+        padding: 0;
+        outline: none;
     }
 
     h2 {
