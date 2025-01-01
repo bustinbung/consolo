@@ -5,11 +5,13 @@ interface Props {
 
 import Page from "@layouts/Page.astro";
 import Navbar from "@components/Navbar.astro";
+import NavbarDesktop from "@components/NavbarDesktop.astro";
 
 const { title } = Astro.props;
 ---
 <Page {title}>
     <div class="page">
+        <NavbarDesktop />
         <main>
             <header class="page-title">
                 <a href=`/${title.toLowerCase()}` class="header-link">

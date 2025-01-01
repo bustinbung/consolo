@@ -1,46 +1,51 @@
----
-interface Props {
-    fontSizeOverride?: string,
-    paddingScale?: string
-}
-
-const { fontSizeOverride = "1.2rem", paddingScale = "0.5"} = Astro.props;
----
-<nav id="desktop" class="desktop">
-    <div class="nav-item"><a href="/">home</a></div>
-    <div class="nav-item"><a href="/about">about</a></div>
-    <div class="nav-item"><a href="/work">work</a></div>
-    <div class="nav-item"><a href="/blog">blog</a></div>
+<nav class="desktop">
+    <div class="nav-item">
+        <a href="/" class="home" aria-label="Home">home</a>
+    </div>
+    <div class="nav-item">
+        <a href="/about" aria-label="About">about</a>
+    </div>
+    <div class="nav-item" >
+        <a href="/work" aria-label="Work">work</a>
+    </div>
+    <div class="nav-item">
+        <a href="/blog" aria-label="Blog">blog</a>
+    </div>
 </nav>
 
-<style lang="scss" define:vars={{fontSizeOverride, paddingScale}}>
+<style lang="scss">
     nav {
-        width: 100%;
         display: none;
         grid-template-columns: repeat(4, 1fr);
-        gap: 1px;
         outline: var(--outline);
-        font-family: var(--sans-serif-font);
-        font-weight: 500;
-
-        position: absolute;
-        bottom: var(--global-padding);
+        position: sticky;
+        background-color: var(--bg-color);
+        gap: 1px;
     }
 
     .nav-item {
-        padding-block: calc(var(--global-padding) * var(--paddingScale));
+        outline: var(--outline);
+        font-size: 1.2rem;
+        padding-block: calc(var(--global-padding) / 1.25);
         display: flex;
         justify-content: center;
-        outline: var(--outline);
-        font-size: var(--fontSizeOverride);
+        font-family: var(--sans-serif-font);
+        font-weight: 450;
+
+        a {
+            text-decoration: none;
+            transition: all 0.5s ease;
+            padding: 5px;
+
+            &:hover {
+                    background-color: var(--fg-color);
+                    color: var(--bg-color);
+            }
+        }
+
     }
 
-    a {
-        text-decoration: none;
-        color: var(--fg-color);
-    }
-
-    @media only screen and (min-width: 768px) {
+    @media (min-width: 1024px) {
         nav {
             display: grid;
         }
