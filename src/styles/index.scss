@@ -5,11 +5,11 @@
 :root {
     --global-padding: 1.2rem;
     --outline: 1px solid black;
-    --sans-serif-font: 'PP Neue Montreal';
+    --sans-serif-font: 'PP Neue Montreal', sans-serif;
     --sans-serif-weight: 700;
-    --serif-font: 'PP Writer';
+    --serif-font: 'PP Writer', serif;
     --serif-weight: 345;
-    --mono-font: 'PP Neue Montreal Mono';
+    --mono-font: 'PP Neue Montreal Mono', monospace;
     --mono-weight: 450;
 
     --offwhite: #faf9f6;
