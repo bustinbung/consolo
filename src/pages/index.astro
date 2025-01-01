@@ -84,4 +84,27 @@ import reelImg from "@assets/img/16-9.jpg";
             font-size: 1.4rem;
         }
     }
+
+    @media (min-width: 1024px) {
+        .page {
+            justify-content: center;
+        }
+
+        main {
+            height: auto;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+        }
+
+        :global(.nav-item) {
+            font-size: 1.4rem !important;
+            padding-block: var(--global-padding) !important;
+        }
+    }
 </style>

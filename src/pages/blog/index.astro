@@ -67,4 +67,21 @@ import Date from '@components/Date.astro';
         margin-block: 0;
         font-size: 1.6rem;
     }
+
+    @media (min-width: 768px) {
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .content {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+        }
+    }
 </style>
