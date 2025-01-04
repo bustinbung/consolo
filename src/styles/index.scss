@@ -176,6 +176,10 @@ th, td {
     padding-block: 5px;
 }
 
+iframe[title="YouTube video player"] {
+    width: 100%;
+}
+
 @media (min-width: 768px) {
     html {
         font-size: 18px;
