@@ -5,7 +5,7 @@ export async function getStaticPaths() {
     const posts = await getCollection('blog');
 
     return posts.map((post) => ({
-        params: { post: post.id },
+        params: { post: post.id.split("_")[1] },
         props: { post }
     }))
 };

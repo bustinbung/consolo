@@ -17,7 +17,7 @@ import ContentPage from '@layouts/ContentPage.astro';
             <div class="post" id={post.id}>
                 <div class="post-details">
                     <header>
-                        <a href={`/blog/${post.id}`}>
+                        <a href={`/blog/${post.id.split("_")[1]}`}>
                             <h2>{post.data.title}</h2>
                         </a>
                         {post.data.updateDate ? 
