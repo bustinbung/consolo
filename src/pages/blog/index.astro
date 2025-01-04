@@ -1,4 +1,5 @@
 ---
+import Date from '@components/ui/Date.astro';
 import { getCollection } from 'astro:content';
 
 const posts = await getCollection('blog', ({data}) => {
@@ -9,7 +10,6 @@ posts.sort((a, b) => {
 })
 
 import ContentPage from '@layouts/ContentPage.astro';
-import Date from '@components/Date.astro';
 ---
 <ContentPage title="Blog">
     <div class="content">

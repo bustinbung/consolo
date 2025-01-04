@@ -1,0 +1,16 @@
+---
+interface Props {
+    mp4Source?: string,
+    webmSource?: string,
+    thumbnail?: string
+}
+
+const { mp4Source, webmSource, thumbnail } = Astro.props;
+---
+<video controls
+       poster={thumbnail ? thumbnail : ""}>
+    {mp4Source && <source src={mp4Source} type="video/mp4" />}
+    {webmSource && <source src={webmSource} type="video/webm" />}
+    <p>Your browser does not support the &lt;video&gt; tag.</p>
+    <p><a href={mp4Source ? mp4Source : webmSource}>Download Video</a></p>
+</video>

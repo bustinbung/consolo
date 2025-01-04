@@ -14,7 +14,7 @@ const { entry } = Astro.props;
 const { Content } = await render(entry);
 
 import ContentPage from '@layouts/ContentPage.astro';
-import Date from '@components/Date.astro';
+import Date from '@components/ui/Date.astro';
 import { Image } from 'astro:assets';
 ---
 <ContentPage title="Work">
