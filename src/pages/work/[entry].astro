@@ -62,15 +62,20 @@ import { Image } from 'astro:assets';
         .content {
             flex-direction: row-reverse;
             align-items: flex-start;
+            height: 100%;
         }
 
         .content-text {
             outline: var(--outline);
+            width: 50%;
+            height: 100%;
+            max-width: revert;
         }
 
         .thumbnail {
             position: sticky;
             top: 0;
+            max-width: 50%;
         }
     }
 </style>
