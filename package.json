@@ -13,10 +13,10 @@
     "@astrojs/markdoc": "^0.12.4",
     "@date-fns/tz": "^1.2.0",
     "@vercel/speed-insights": "^1.1.0",
-    "astro": "^5.1.1",
+    "astro": "^5.1.2",
     "date-fns": "^4.1.0",
     "modern-normalize": "^3.0.1",
-    "sass": "^1.83.0",
+    "sass": "^1.83.1",
     "typescript": "^5.7.2"
   }
 }
