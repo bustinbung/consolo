@@ -11,7 +11,7 @@ const work = defineCollection({
         roles: z.array(z.string()),
         date: z.coerce.date(),
         updateDate: z.coerce.date().optional(),
-        outboundLink: z.string().url(),
+        outboundLink: z.string().url().optional(),
         thumbnail: image(),
         isDraft: z.boolean().optional().default(false),
     })

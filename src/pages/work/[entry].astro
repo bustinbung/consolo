@@ -24,7 +24,9 @@ import { Image } from 'astro:assets';
     </header>
     <div class="content">
         <div class="thumbnail">
-            <Image src={entry.data.thumbnail} alt={entry.data.title} />
+            <a href={entry.data.outboundLink}>
+                <Image src={entry.data.thumbnail} alt={entry.data.title} />
+            </a>
         </div>
         <div class="content-text pad child-margin-fix">
             <Content />
