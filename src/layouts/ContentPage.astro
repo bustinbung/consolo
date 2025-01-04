@@ -1,22 +1,29 @@
 ---
 interface Props {
-    title: string
+    title: string,
+    header?: string
 }
 
 import Page from "@layouts/Page.astro";
 import Navbar from "@components/ui/Navbar.astro";
 import NavbarDesktop from "@components/ui/NavbarDesktop.astro";
 
-const { title } = Astro.props;
+const { title, header = title } = Astro.props;
 ---
 <Page {title}>
     <div class="page">
         <NavbarDesktop />
         <main>
             <header class="page-title">
-                <a href=`/${title.toLowerCase()}` class="header-link">
-                    <h1>{title.toLowerCase()}</h1>
-                </a>
+                {header ?
+                    <a href=`/${header.toLowerCase()}` class="header-link">
+                        <h1>{header.toLowerCase()}</h1>
+                    </a>
+                :
+                    <a href=`/${title.toLowerCase()}` class="header-link">
+                        <h1>{title.toLowerCase()}</h1>
+                    </a>
+                }
             </header>
             <slot />
         </main>

@@ -16,7 +16,7 @@ const { Content } = await render(post);
 import ContentPage from '@layouts/ContentPage.astro';
 import Date from '@components/ui/Date.astro';
 ---
-<ContentPage title="Blog">
+<ContentPage title={post.data.title} header="Blog">
     <header>
         <h1>{post.data.title}</h1>
         {post.data.updateDate && <Date date={post.data.updateDate} />}

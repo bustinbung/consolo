@@ -17,7 +17,7 @@ import ContentPage from '@layouts/ContentPage.astro';
 import Date from '@components/ui/Date.astro';
 import { Image } from 'astro:assets';
 ---
-<ContentPage title="Work">
+<ContentPage title={entry.data.title} header="work">
     <header>
         <h1>{entry.data.title}</h1>
         <Date date={entry.data.date} formatString="yyyy/MM" />
