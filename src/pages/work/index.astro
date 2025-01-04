@@ -1,15 +1,20 @@
 ---
+import ContentPage from '@layouts/ContentPage.astro';
+import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 
-const entries = await getCollection('work', ({data}) => {
-    return data.isDraft != true;
+const entries = await getCollection("work", ({ data }) => {
+    if (import.meta.env.PROD && data.isDraft) {
+        return false;
+    } else {
+        return true;
+    }
 });
+
 entries.sort((a, b) => {
     return b.data.date.getTime() - a.data.date.getTime();
 })
 
-import ContentPage from '@layouts/ContentPage.astro';
-import { Image } from 'astro:assets';
 ---
 <ContentPage title="Work">
     <div class="content">
