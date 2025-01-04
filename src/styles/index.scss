@@ -164,6 +164,18 @@ header {
     align-items: center;
 }
 
+table {
+    border-collapse: collapse;
+    border: var(--outline);
+    width: 100%;
+}
+
+th, td {
+    border: var(--outline);
+    padding-inline: 5px;
+    padding-block: 5px;
+}
+
 @media (min-width: 768px) {
     html {
         font-size: 18px;
