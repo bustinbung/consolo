@@ -56,7 +56,11 @@ import headshotImg from '@assets/img/headshot.jpg';
                         <i class="fa-brands fa-bluesky fa-2xl"></i>
                     </a>
                 </div>
-                <div></div>
+                <div class="item">
+                    <a href="https://letterboxd.com/bustinbung/" aria-label="Letterboxd">
+                        <i class="fa-brands fa-letterboxd fa-2xl"></i>
+                    </a>
+                </div>
                 <div></div>
             </section>
             <section class="site">
@@ -197,7 +201,7 @@ import headshotImg from '@assets/img/headshot.jpg';
         .online {
             grid-template-columns: repeat(3, 1fr);
 
-            & > :nth-last-child(-n + 2) {
+            & > :nth-last-child(-n + 1) {
                 display: none;
             }
         }
