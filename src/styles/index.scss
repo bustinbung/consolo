@@ -173,6 +173,10 @@ a[aria-describedby="footnote-label"] {
     scroll-margin-top: 48vh;
 }
 
+iframe {
+    width: 100%;
+}
+
 .content {
     display: flex;
     flex-direction: column;
