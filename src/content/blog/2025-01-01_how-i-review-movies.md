@@ -2,6 +2,7 @@
 title: "How I Review Movies"
 description: "An explanation of my rating system for movies, based on Josh George's system."
 date: 2025-01-01
+isDraft: true
 ---
 ## The Problem
 

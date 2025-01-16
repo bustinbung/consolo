@@ -2,6 +2,7 @@
 title: "v6 Redesign"
 description: "How I designed and developed a brand new version of my website."
 date: 2024-12-14
+isDraft: true
 ---
 import Figure from '@components/ui/Figure.astro';
 
@@ -21,13 +22,13 @@ import old_site_home_mobile from '@assets/img/blog/redesign/old-site-home-mobile
 <Figure
     src={old_site_home_mobile}
     alt="A screenshot of the old site on mobile"
-    caption="The old site on mobile" />
+    caption="The old site on mobile. Look at that footer!" />
 
-### Inspiration
+## Drawing Inspiration
 
 I've always been a fan of minimal, geometric designs.
 
-[Teenage Engineering](https://teenage.engineering/)'s designs have always been some of my favorites.
+[Teenage Engineering](https://teenage.engineering/)'s designs have always been some of my favorites. Their designs always look and feel playful and elegant while still being functional.
 
 import op_1 from '@assets/img/blog/redesign/op-1.png';
 
@@ -35,7 +36,7 @@ import op_1 from '@assets/img/blog/redesign/op-1.png';
     src={op_1}
     alt="Teenage Engineering's OP-1 synthesizer" />
 
-I love the aesthetic of the [Anytype](https://anytype.io) website.[^1]
+I love the aesthetic of the [Anytype](https://anytype.io) website.[^1] The clean, thin grids, the Macintosh System 1 inspired icons and graphics, and the little splashes of color all blend together well.
 
 import anytype_home from '@assets/img/blog/redesign/anytype-home.png';
 
@@ -44,8 +45,34 @@ import anytype_home from '@assets/img/blog/redesign/anytype-home.png';
     alt="A screenshot of the Anytype homepage"
     caption="Anytype's homepage" />
 
+As it turns out, this style of design has a name: Swiss Style.
 
-[^1]: Anytype is a pretty great free and open-source Notion replacement with a focus on privacy and decentralized sync. Definitely not close to feature parity with Notion, but Notion also tries to do too much so maybe a win?
+### Swiss Style
+
+"[Swiss Style](https://en.wikipedia.org/wiki/Swiss_Style_(design))" is a graphic design trend that centers (broadly) around grids, sans-serif fonts, and asymmetrical designs. [^2]
+
+Josef Müller-Brockmann was an influential Swiss style designer, helping spread Swiss style beyond Europe.[^3]
+
+import josef_work from '../../assets/img/blog/redesign/josef-work.jpg';
+
+<Figure 
+    src={josef_work}
+    alt="Some samples of Josef Müller-Brockmann's work"/>
+
+You might be familiar with American designer Paul Rand, known for his work on iconic logos like ABC and IBM. He was one of the first American designers to embrace Swiss style in his work.[^4][^5]
+
+## Designing
+
+I did all of my designing work in [Figma](https://figma.com), with some help from [Zeplin](https://zeplin.io), a free alternative to Figma's Dev Mode.
+
+To avoid the pitfalls that came from designing desktop first and then squeezing it down for mobile, I worked on the mobile version first.
+
+
+[^1]: Anytype is a pretty great free and open-source Notion alternative with a focus on privacy and decentralized sync. It's got a super deep typing and relations system that's a bit hard to wrap your head around the first time, but it's a really incredible piece of software.
+[^2]: For more, check out the [Wikipedia article](https://en.wikipedia.org/wiki/Swiss_Style_(design)).
+[^3]: https://www.printmag.com/featured/swiss-style-principles-typefaces-designers/
+[^4]: https://www.paulrand.design/
+[^5]: https://www.britannica.com/biography/Paul-Rand
 
 {/* - Inspired by Swiss style design
     - Anytype & Teenage Engineering
