@@ -169,6 +169,10 @@ header {
     outline: var(--outline);
 }
 
+a[aria-describedby="footnote-label"] {
+    scroll-margin-top: 48vh;
+}
+
 .content {
     display: flex;
     flex-direction: column;
