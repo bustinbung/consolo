@@ -30,6 +30,32 @@ import Date from '@components/ui/Date.astro';
     </div>
 </ContentPage>
 
+<script lang="ts">
+    navigation.addEventListener('navigate', (event) => {
+        if (event.destination.sameDocument != true) {
+            return;
+        }
+
+        if (!event.destination.url.includes('fnref')) {
+            return;
+        }
+
+        const highlightElement = document.querySelector(`#${event.destination.url.split("#")[1]}`).parentElement.parentElement;
+        highlightElement.classList.add('highlight');
+        setTimeout(continueHighlight, 1000, highlightElement);
+    })
+
+    function continueHighlight(highlightElement) {
+        highlightElement.style.transition = "background-color 1s ease"
+        highlightElement.classList.remove('highlight');
+        setTimeout(endHighlight, 1000, highlightElement);
+    }
+
+    function endHighlight(highlightElement) {
+        highlightElement.style.transition = '';
+    }
+</script>
+
 <style lang="scss">
     header {
         h1 {
@@ -48,9 +74,13 @@ import Date from '@components/ui/Date.astro';
         font-style: italic;
     }
 
+    :global(.highlight) {
+        background-color: #ffde64;
+    }
+
     @media (min-width: 768px) {
         .content-text {
-            max-width: 30rem;
+            max-width: 35rem;
         }
     }
 </style>
