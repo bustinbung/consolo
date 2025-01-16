@@ -177,6 +177,10 @@ iframe {
     width: 100%;
 }
 
+li {
+    word-break: break-word;
+}
+
 .content {
     display: flex;
     flex-direction: column;
