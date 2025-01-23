@@ -173,6 +173,14 @@ a[aria-describedby="footnote-label"] {
     scroll-margin-top: 48vh;
 }
 
+[data-footnote-ref]::before {
+    content: '[';
+}
+
+[data-footnote-ref]::after {
+    content: ']';
+}
+
 iframe {
     width: 100%;
 }
