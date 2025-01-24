@@ -49,7 +49,7 @@ As it turns out, this style of design has a name: Swiss Style.
 
 ### Swiss Style
 
-"[Swiss Style](https://en.wikipedia.org/wiki/Swiss_Style_(design))" is a graphic design trend that centers (broadly) around grids, sans-serif fonts, and asymmetrical designs. [^2]
+"[Swiss Style](https://en.wikipedia.org/wiki/Swiss_Style_(design))" is a graphic design trend that centers (broadly) around grids, sans-serif fonts, and asymmetrical designs.[^2]
 
 Josef Müller-Brockmann was an influential Swiss style designer, helping spread Swiss style beyond Europe.[^3]
 
@@ -61,16 +61,72 @@ import josef_work from '../../assets/img/blog/redesign/josef-work.jpg';
 
 You might be familiar with American designer Paul Rand, known for his work on iconic logos like ABC and IBM. He was one of the first American designers to embrace Swiss style in his work.[^4][^5]
 
+import rand_work from '../../assets/img/blog/redesign/rand-work.jpg';
+
+<Figure 
+    src={rand_work}
+    alt="Some samples of Paul Rand's work"/>
+
 ## Designing
 
-I did all of my designing work in [Figma](https://figma.com), with some help from [Zeplin](https://zeplin.io), a free alternative to Figma's Dev Mode.
+I did all of my designing work in [Figma](https://figma.com).
 
 To avoid the pitfalls that came from designing desktop first and then squeezing it down for mobile, I worked on the mobile version first.
 
-I made extensive use of Figma's auto layout to simulate CSS flexboxes, as I knew that's the framework I wanted to use for the site.
+I made extensive use of Figma's auto layout to simulate CSS flexboxes, and designing this way helped me avoid some design decisions that would have been...painful to actually implement.
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/gQ5JLAJQ83qM1OYkghgidg/v6.1-redesign?node-id=0-1&embed-host=share" allowfullscreen></iframe>
+import painful_mobile from '../../assets/img/blog/redesign/painful-mobile.jpg';
 
+<Figure 
+    src={painful_mobile}
+    alt="A screenshot of the first iteration of the design. The header text is centered on the border."
+    caption="Not sure how I'd recreate this header design" />
+
+Nevertheless, work was steady, and I'm pleased with the result.
+
+import design_versions from '../../assets/img/blog/redesign/design-versions.webp';
+
+<Figure 
+    src={design_versions}
+    alt="An animated image showing the progress of the design over time."
+    caption="Design over time" />
+
+All in all, the total design process (according to Figma version history tracking) took 20 days.
+
+## Development
+
+Developing the website, in all, took about a month. I worked in [Astro](https://astro.build), a JavaScript framework and static site generator (SSG). I could have used another SSG like [11ty](https://www.11ty.dev/) or [Hugo](https://gohugo.io/), but Astro is popular and I heard good things about the developer experience.
+
+For those who don't understand how Astro works, sites are built using [components](https://docs.astro.build/en/basics/astro-components/): reusable UI elements that are encapsulated in a single file. You might have a group of buttons for example:
+
+```html
+<div>
+    <button>Button 1</button>
+    <button>Button 2</button>
+    <button>Button 3</button>
+    <button>Button 4</button>
+</div>
+```
+
+This is fine, but what if you want to reuse this button group somewhere else? Instead of copying and pasting the code (and having to update every instance if you change something), you could create a component and reuse the component throughout your UI.
+
+```astro
+<!-- ButtonGroup.astro -->
+<div>
+    <button>Button 1</button>
+    <button>Button 2</button>
+    <button>Button 3</button>
+    <button>Button 4</button>
+</div>
+```
+
+```astro
+<!-- index.astro -->
+<ButtonGroup />
+<ButtonGroup />
+```
+
+My site is built on the 
 ---
 
 
